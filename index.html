@@ -13,15 +13,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="styles/header_styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/custom_styles.css" />
   </head>
   <body>
-    <header id="main-header">
-      <a class="logo" href="#"><img src="img/logo.png" /></a>
-      <a href="javascript:show_menu()" class="hamburger">
-        <hr />
-        <hr />
-        <hr />
-      </a>
+    <header>
+      <div class="main-header">
+        <a class="logo" href="#"><img src="img/logo_header.png" /></a>
+        <a href="javascript:show_menu()" class="hamburger">
+          <hr />
+          <hr />
+          <hr />
+        </a>
+      </div>
+      <video autoplay muted loop class="background-video closed">
+        <source src="img/stars.mp4" type="video/mp4" />
+      </video>
+      <ul class="navigation closed">
+        <li><a href="#jak_dzialamy">Jak działamy</a></li>
+        <li><a href="#uslugi">Usługi</a></li>
+        <li><a href="#zaufali_mi">Zaufali mi</a></li>
+        <li><a href="#o_mnie">O mnie</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
     </header>
 
     <main id="main-content">
@@ -29,23 +43,21 @@
         <video autoplay muted loop class="background-video">
           <source src="img/stars.mp4" type="video/mp4" />
         </video>
-        <div class="accessibility">
-          <a href="javascript:some_function()" class="disabled">
-            <img src="img/disabled.png" />
-          </a>
-          <a href="javascript:some_function()" class="font">
-            <img src="img/font.png" />
-          </a>
-          <a href="javascript:some_function()" class="contrast">
-            <img src="img/contrast.png" />
-          </a>
-        </div>
+        <!-- <a href="javascript:some_function()" class="disabled">
+          <img src="img/disabled.png" />
+        </a>
+        <a href="javascript:some_function()" class="font">
+          <img src="img/font.png" />
+        </a>
+        <a href="javascript:some_function()" class="contrast">
+          <img src="img/contrast.png" />
+        </a> -->
         <div class="description">
           <div class="title">Nowoczesna Kandcelaria</div>
           <div class="content">Obsługa prawna<br />na miarę XXI wieku</div>
         </div>
       </section>
-      <section>
+      <section id="jak_dzialamy">
         <div class="content">
           Indywidulne i transparentne na każdym etapie<br />współpracy podejście
           do klienta to nasze<br />nadrzędne wartości.<br /><br />Specjalizujemy
@@ -55,49 +67,210 @@
           cywilnym, spadkowym, rodzinnym oraz karne.
         </div>
       </section>
-      <section>
-        <a href="javascript:some_function()" class="item">
-          <img src="img/wektory_1.png" />
-          <span>Umowy</span> </a
-        ><!--
-        --><a href="javascript:some_function()" class="item">
-          <img src="img/wektory_2.png" />
-          <span>Obsługa Spółek</span> </a
-        ><!--
-        --><a href="javascript:some_function()" class="item">
-          <img src="img/wektory_3.png" />
-          <span>RODO</span> </a
-        ><!--
-        --><a href="javascript:some_function()" class="item">
-          <img src="img/wektory_4.png" />
-          <span>Postępowania sądowe</span> </a
-        ><!--
-        --><a href="javascript:some_function()" class="item">
-          <img src="img/wektory_5.png" />
-          <span>Obsługa klienta indywidualnego</span> </a
-        ><!--
-        --><a href="javascript:some_function()" class="item">
-          <img src="img/wektory_6.png" />
-          <span>E-commerce</span>
-        </a>
-      </section>
-      <section>
-        <div class="top-right-triangle"></div>
-        <div class="carousel"></div>
-        <div class="bot-right-triangle"></div>
-      </section>
-      <section>
-        <img class="portrait" src="img/portret.png" />
-        <img class="cosmic_img" src="img/cosmic_lines_1.png" />
-        <div class="title">O mnie</div>
-        <div class="content">
-          Jestem aabsolwentem Katolickiego Uniwersytetu Lubellskiego im. Jana
-          Pawła II.<br />
-          Współpracowałem ze znanymi i cenionymi na rynku kancelariami, m. in.
-          Zuzmak i Partnerzy. kancelaria Adwokacka Andrzeja Latocha czy GWW.
+      <section id="uslugi">
+        <div class="col">
+          <a href="javascript:show_bookmark(1)" class="item">
+            <img src="img/wektory_1.png" />
+            <span>Umowy</span>
+          </a>
+          <a href="javascript:show_bookmark(3)" class="item">
+            <img src="img/wektory_3.png" />
+            <span>RODO</span>
+          </a>
+          <a href="javascript:show_bookmark(5)" class="item">
+            <img src="img/wektory_5.png" />
+            <span>Szkolenia</span>
+          </a>
+          <a href="javascript:show_bookmark(7)" class="item">
+            <img src="img/wektory_7.png" />
+            <span>Prawo IT</span>
+          </a>
+        </div>
+        <div class="col">
+          <a href="javascript:show_bookmark(2)" class="item">
+            <img src="img/wektory_2.png" />
+            <span>Kompleksowa obsługa firm</span>
+          </a>
+          <a href="javascript:show_bookmark(4)" class="item">
+            <img src="img/wektory_4.png" />
+            <span>E-commerce</span>
+          </a>
+          <a href="javascript:show_bookmark(6)" class="item">
+            <img src="img/wektory_6.png" />
+            <span>Postępowania sądowe</span>
+          </a>
+          <a href="javascript:show_bookmark(8)" class="item">
+            <img src="img/wektory_8.png" />
+            <span>Obsługa klienta indywidualnego</span>
+          </a>
         </div>
       </section>
-      <div style="height: 200px; background-color: blue"></div>
+      <div class="bookmarks">
+        <div class="bookmark closed">
+          <img src="img/wektory_1.png" />
+          <div class="title">Umowy</div>
+          <div class="content">
+            Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
+            polityki prywatności, polityki dostępności, polityki sygnalistów,
+            tworzenie umów z podwykonawcami, z pracownikami, RODO, analizy
+            ryzyka i inne takie bardzo trudne kwestie. Trzeba się znać. Dużo nie
+            bierzemy, a dobrze będzie i nawet tanio w porównaniu do takiej
+            warszawki.
+          </div>
+          <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
+        </div>
+        <div class="bookmark closed">
+          <img src="img/wektory_2.png" />
+          <div class="title">Kompleksowa obsługa firm</div>
+          <div class="content">
+            Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
+            polityki prywatności, polityki dostępności, polityki sygnalistów,
+            tworzenie umów z podwykonawcami, z pracownikami, RODO, analizy
+            ryzyka i inne takie bardzo trudne kwestie. Trzeba się znać. Dużo nie
+            bierzemy, a dobrze będzie i nawet tanio w porównaniu do takiej
+            warszawki.
+          </div>
+          <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
+        </div>
+        <div class="bookmark closed">
+          <img src="img/wektory_3.png" />
+          <div class="title">RODO</div>
+          <div class="content">
+            Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
+            polityki prywatności, polityki dostępności, polityki sygnalistów,
+            tworzenie umów z podwykonawcami, z pracownikami, RODO, analizy
+            ryzyka i inne takie bardzo trudne kwestie. Trzeba się znać. Dużo nie
+            bierzemy, a dobrze będzie i nawet tanio w porównaniu do takiej
+            warszawki.
+          </div>
+          <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
+        </div>
+        <div class="bookmark closed">
+          <img src="img/wektory_4.png" />
+          <div class="title">E-commerce</div>
+          <div class="content">
+            Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
+            polityki prywatności, polityki dostępności, polityki sygnalistów,
+            tworzenie umów z podwykonawcami, z pracownikami, RODO, analizy
+            ryzyka i inne takie bardzo trudne kwestie. Trzeba się znać. Dużo nie
+            bierzemy, a dobrze będzie i nawet tanio w porównaniu do takiej
+            warszawki.
+          </div>
+          <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
+        </div>
+        <div class="bookmark closed">
+          <img src="img/wektory_5.png" />
+          <div class="title">Szkolenia</div>
+          <div class="content">
+            Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
+            polityki prywatności, polityki dostępności, polityki sygnalistów,
+            tworzenie umów z podwykonawcami, z pracownikami, RODO, analizy
+            ryzyka i inne takie bardzo trudne kwestie. Trzeba się znać. Dużo nie
+            bierzemy, a dobrze będzie i nawet tanio w porównaniu do takiej
+            warszawki.
+          </div>
+          <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
+        </div>
+        <div class="bookmark closed">
+          <img src="img/wektory_6.png" />
+          <div class="title">Postępowania sądowe</div>
+          <div class="content">
+            Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
+            polityki prywatności, polityki dostępności, polityki sygnalistów,
+            tworzenie umów z podwykonawcami, z pracownikami, RODO, analizy
+            ryzyka i inne takie bardzo trudne kwestie. Trzeba się znać. Dużo nie
+            bierzemy, a dobrze będzie i nawet tanio w porównaniu do takiej
+            warszawki.
+          </div>
+          <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
+        </div>
+        <div class="bookmark closed">
+          <img src="img/wektory_7.png" />
+          <div class="title">Prawo IT</div>
+          <div class="content">
+            Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
+            polityki prywatności, polityki dostępności, polityki sygnalistów,
+            tworzenie umów z podwykonawcami, z pracownikami, RODO, analizy
+            ryzyka i inne takie bardzo trudne kwestie. Trzeba się znać. Dużo nie
+            bierzemy, a dobrze będzie i nawet tanio w porównaniu do takiej
+            warszawki.
+          </div>
+          <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
+        </div>
+        <div class="bookmark closed">
+          <img src="img/wektory_8.png" />
+          <div class="title">Obsługa klienta indywidualnego</div>
+          <div class="content">
+            Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
+            polityki prywatności, polityki dostępności, polityki sygnalistów,
+            tworzenie umów z podwykonawcami, z pracownikami, RODO, analizy
+            ryzyka i inne takie bardzo trudne kwestie. Trzeba się znać. Dużo nie
+            bierzemy, a dobrze będzie i nawet tanio w porównaniu do takiej
+            warszawki.
+          </div>
+          <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
+        </div>
+      </div>
+      <section id="zaufali_mi">
+        <div class="top-right-triangle"></div>
+        <div class="title">Wybrani klienci</div>
+        <div class="content">
+          <a href="#"><img src="img/itsm.png" /></a>
+          <a href="#"><img src="img/astra.png" /></a>
+          <a href="#"><img src="img/opgk.png" /></a>
+          <a href="#"><img src="img/giw.png" /></a>
+          <a href="#"><img src="img/salesbook.png" /></a>
+          <a href="#"><img src="img/dare.png" /></a>
+        </div>
+        <div style="clear: both; height: 0px"></div>
+        <div class="bot-right-triangle"></div>
+      </section>
+      <section id="o_mnie">
+        <img class="portrait" src="img/portret.png" />
+        <img class="cosmic_img" src="img/cosmic_lines_1.png" />
+        <div class="text">
+          <div class="title">O mnie</div>
+          <div class="content">
+            Jestem absolwentem Katolickiego Uniwersytetu Lubellskiego im. Jana
+            Pawła II.<br /><br />
+            Współpracowałem ze znanymi i cenionymi na rynku kancelariami, m. in.
+            Zuzmak i Partnerzy. kancelaria Adwokacka Andrzeja Latocha czy GWW.
+          </div>
+        </div>
+        <div class="bot-right-triangle"></div>
+      </section>
+      <section id="blog">
+        <img class="lightbulb" src="img/lightbulb.png" />
+      </section>
+      <section id="kontakt">
+        <div class="title">Formularz<br />kontaktowy</div>
+        <form>
+          <label for="name_ci">Imię i nazwisko</label>
+          <input type="text" id="name_ci" />
+          <label for="mail_ci">Adres e-mail</label>
+          <input type="email" id="mail_ci" />
+          <label for="content_ci">Treść wiadomości</label>
+          <textarea id="content_ci"></textarea>
+          <button>Wyślij wiadomość</button>
+          <div style="clear: both; height: 0px"></div>
+        </form>
+        <div class="asap">
+          <img src="img/contact.png" />
+          <div class="title">Szybki kontakt</div>
+          <a href="tel:+48 726 103 160">+48 726 103 160</a>
+          <a href="mailto:buczek@newlegal.pl">buczek@newlegal.pl</a>
+        </div>
+      </section>
     </main>
+    <footer id="main-footer">
+      <img class="logo" src="img/logo_header.png" />
+      <div class="data">
+        KRASNE 32A/22, 36-007 KRASNE<br />NIP 5170421631<br />REGON 520727679<br />NR
+        KONTA BANKOWEGO 63 1000 0009 9997 5674 7861
+      </div>
+      <a class="privacy" href="#">Polityka prywatności i cookies</a>
+    </footer>
+    <script src="scripts/header_scripts.js"></script>
+    <script src="scripts/custom_scripts.js"></script>
   </body>
 </html>
