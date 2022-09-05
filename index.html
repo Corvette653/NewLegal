@@ -4,16 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NewLegal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Rubik"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Alef"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="styles/header_styles.css" />
-    <link rel="stylesheet" type="text/css" href="styles/custom_styles.css" />
+    <link rel="stylesheet" href="styles/home_styles.css" />
   </head>
   <body>
     <header>
@@ -39,7 +36,7 @@
     </header>
 
     <main id="main-content">
-      <section>
+      <section id="tytul">
         <video autoplay muted loop class="background-video">
           <source src="img/stars.mp4" type="video/mp4" />
         </video>
@@ -59,12 +56,15 @@
       </section>
       <section id="jak_dzialamy">
         <div class="content">
-          Indywidulne i transparentne na każdym etapie<br />współpracy podejście
-          do klienta to nasze<br />nadrzędne wartości.<br /><br />Specjalizujemy
-          się w sprawach związanych z<br />szeroko zakrojoną obsługą spółek ,<br />e-commerce,
-          bezpieczeństwem danych<br />osobowych, polityką dostępności,<br />prawo
-          IT, umowy IT.<br /><br />Prowadzimy rozprawy związane z prawem
-          cywilnym, spadkowym, rodzinnym oraz karne.
+          Indywidulne i&nbsp;transparentne na każdym etapie współpracy podejście
+          do klienta to nasze nadrzędne wartości.
+          <br /><br />
+          Specjalizujemy się w&nbsp;sprawach związanych z&nbsp;szeroko zakrojoną
+          obsługą spółek, e-commerce, bezpieczeństwem danych osobowych, polityką
+          dostępności, prawo&nbsp;IT, umowy&nbsp;IT.
+          <br /><br />
+          Prowadzimy rozprawy związane z prawem cywilnym, spadkowym, rodzinnym
+          oraz karne.
         </div>
       </section>
       <section id="uslugi">
@@ -73,41 +73,50 @@
             <img src="img/wektory_1.png" />
             <span>Umowy</span>
           </a>
+          <div style="clear: both; height: 0"></div>
           <a href="javascript:show_bookmark(3)" class="item">
             <img src="img/wektory_3.png" />
             <span>RODO</span>
           </a>
+          <div style="clear: both; height: 0"></div>
           <a href="javascript:show_bookmark(5)" class="item">
             <img src="img/wektory_5.png" />
             <span>Szkolenia</span>
           </a>
+          <div style="clear: both; height: 0"></div>
           <a href="javascript:show_bookmark(7)" class="item">
             <img src="img/wektory_7.png" />
             <span>Prawo IT</span>
           </a>
+          <div style="clear: both; height: 0"></div>
         </div>
         <div class="col">
           <a href="javascript:show_bookmark(2)" class="item">
             <img src="img/wektory_2.png" />
-            <span>Kompleksowa obsługa firm</span>
+            <span>Kompleksowa<br />obsługa firm</span>
           </a>
+          <div style="clear: both; height: 0"></div>
           <a href="javascript:show_bookmark(4)" class="item">
             <img src="img/wektory_4.png" />
             <span>E-commerce</span>
           </a>
+          <div style="clear: both; height: 0"></div>
           <a href="javascript:show_bookmark(6)" class="item">
             <img src="img/wektory_6.png" />
             <span>Postępowania sądowe</span>
           </a>
+          <div style="clear: both; height: 0"></div>
           <a href="javascript:show_bookmark(8)" class="item">
             <img src="img/wektory_8.png" />
-            <span>Obsługa klienta indywidualnego</span>
+            <span>Obsługa klienta<br />indywidualnego</span>
           </a>
+          <div style="clear: both; height: 0"></div>
         </div>
+        <div style="clear: both; height: 0"></div>
       </section>
       <div class="bookmarks">
         <div class="bookmark closed">
-          <img src="img/wektory_1.png" />
+          <img class="icon" src="img/wektory_1.png" />
           <div class="title">Umowy</div>
           <div class="content">
             Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -120,7 +129,7 @@
           <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
         </div>
         <div class="bookmark closed">
-          <img src="img/wektory_2.png" />
+          <img class="icon" src="img/wektory_2.png" />
           <div class="title">Kompleksowa obsługa firm</div>
           <div class="content">
             Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -133,7 +142,7 @@
           <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
         </div>
         <div class="bookmark closed">
-          <img src="img/wektory_3.png" />
+          <img class="icon" src="img/wektory_3.png" />
           <div class="title">RODO</div>
           <div class="content">
             Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -146,7 +155,7 @@
           <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
         </div>
         <div class="bookmark closed">
-          <img src="img/wektory_4.png" />
+          <img class="icon" src="img/wektory_4.png" />
           <div class="title">E-commerce</div>
           <div class="content">
             Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -159,7 +168,7 @@
           <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
         </div>
         <div class="bookmark closed">
-          <img src="img/wektory_5.png" />
+          <img class="icon" src="img/wektory_5.png" />
           <div class="title">Szkolenia</div>
           <div class="content">
             Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -172,7 +181,7 @@
           <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
         </div>
         <div class="bookmark closed">
-          <img src="img/wektory_6.png" />
+          <img class="icon" src="img/wektory_6.png" />
           <div class="title">Postępowania sądowe</div>
           <div class="content">
             Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -185,7 +194,7 @@
           <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
         </div>
         <div class="bookmark closed">
-          <img src="img/wektory_7.png" />
+          <img class="icon" src="img/wektory_7.png" />
           <div class="title">Prawo IT</div>
           <div class="content">
             Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -198,7 +207,7 @@
           <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
         </div>
         <div class="bookmark closed">
-          <img src="img/wektory_8.png" />
+          <img class="icon" src="img/wektory_8.png" />
           <div class="title">Obsługa klienta indywidualnego</div>
           <div class="content">
             Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -212,38 +221,75 @@
         </div>
       </div>
       <section id="zaufali_mi">
-        <div class="top-right-triangle"></div>
+        <div class="triangle"></div>
         <div class="title">Wybrani klienci</div>
         <div class="content">
-          <a href="#"><img src="img/itsm.png" /></a>
-          <a href="#"><img src="img/astra.png" /></a>
-          <a href="#"><img src="img/opgk.png" /></a>
+          <a href="https://itsmsoftware.pl"><img src="img/itsm.png" /></a>
+          <a href="https://www.astra.com.pl"><img src="img/astra.png" /></a>
+          <a href="https://opgk.rzeszow.pl"><img src="img/opgk.png" /></a>
           <a href="#"><img src="img/giw.png" /></a>
-          <a href="#"><img src="img/salesbook.png" /></a>
+          <a href="https://salesbook.com"><img src="img/salesbook.png" /></a>
           <a href="#"><img src="img/dare.png" /></a>
         </div>
-        <div style="clear: both; height: 0px"></div>
-        <div class="bot-right-triangle"></div>
+        <div style="clear: both; height: 0"></div>
       </section>
       <section id="o_mnie">
+        <div class="triangle"></div>
         <img class="portrait" src="img/portret.png" />
         <img class="cosmic_img" src="img/cosmic_lines_1.png" />
         <div class="text">
           <div class="title">O mnie</div>
           <div class="content">
-            Jestem absolwentem Katolickiego Uniwersytetu Lubellskiego im. Jana
-            Pawła II.<br /><br />
-            Współpracowałem ze znanymi i cenionymi na rynku kancelariami, m. in.
-            Zuzmak i Partnerzy. kancelaria Adwokacka Andrzeja Latocha czy GWW.
+            Nazywam się Paweł Buczek – jestem adwokatem, inspektorem ochrony
+            danych i właścicielem kancelarii adwokackiej NewLegal. Ukończyłem
+            studia prawnicze na Katolickim Uniwersytecie Lubelskim Jana Pawła II
+            w Lublinie oraz aplikację adwokacką w lubelskiej oraz rzeszowskiej
+            Izbie Adwokackiej. Doświadczenie zawodowe zdobywałem podczas pracy w
+            renomowanych lubelskich kancelariach.
           </div>
         </div>
-        <div class="bot-right-triangle"></div>
       </section>
       <section id="blog">
+        <div class="triangle"></div>
         <img class="lightbulb" src="img/lightbulb.png" />
+        <div class="title">Blog</div>
+        <div class="carousel">
+          <div class="articles">
+            <div class="article">
+              <img src="img/blog_img_1.png" />
+              <div class="article_date">23/07/2022</div>
+              <div class="article_title">
+                Nakaz informowania ws. danych osobowych zarządów spółek
+              </div>
+              <a href="#" class="more">Czytaj więcej</a>
+            </div>
+            <div class="article">
+              <img src="img/blog_img_1.png" />
+              <div class="article_date">22/06/2021</div>
+              <div class="article_title">
+                Inny, starszy, mniej ważny nakaz
+              </div>
+              <a href="#" class="more">Czytaj więcej</a>
+            </div>
+            <div class="article">
+              <img src="img/blog_img_1.png" />
+              <div class="article_date">21/05/2020</div>
+              <div class="article_title">
+                Jeszcze inny, jeszcze starszy, jeszcze mniej ważny nakaz
+              </div>
+              <a href="#" class="more">Czytaj więcej</a>
+            </div>
+          </div>
+          <div class="control">
+            <a href="javascript:set_active_slide(1)" class="circle active"></a>
+            <a href="javascript:set_active_slide(2)" class="circle"></a>
+            <a href="javascript:set_active_slide(3)" class="circle"></a>
+          </div>
+        </div>
       </section>
       <section id="kontakt">
-        <div class="title">Formularz<br />kontaktowy</div>
+        <div class="triangle"></div>
+        <div class="title">Formularz kontaktowy</div>
         <form>
           <label for="name_ci">Imię i nazwisko</label>
           <input type="text" id="name_ci" />
@@ -252,24 +298,33 @@
           <label for="content_ci">Treść wiadomości</label>
           <textarea id="content_ci"></textarea>
           <button>Wyślij wiadomość</button>
-          <div style="clear: both; height: 0px"></div>
+          <div style="clear: both; height: 0"></div>
         </form>
         <div class="asap">
           <img src="img/contact.png" />
-          <div class="title">Szybki kontakt</div>
-          <a href="tel:+48 726 103 160">+48 726 103 160</a>
-          <a href="mailto:buczek@newlegal.pl">buczek@newlegal.pl</a>
+          <div class="content">
+            <div class="title">Szybki kontakt</div>
+            <a href="tel:+48 726 103 160">+48 726 103 160</a>
+            <a href="mailto:buczek@newlegal.pl">buczek@newlegal.pl</a>
+          </div>
         </div>
       </section>
     </main>
+
     <footer id="main-footer">
       <img class="logo" src="img/logo_header.png" />
       <div class="data">
-        KRASNE 32A/22, 36-007 KRASNE<br />NIP 5170421631<br />REGON 520727679<br />NR
-        KONTA BANKOWEGO 63 1000 0009 9997 5674 7861
+        KRASNE 32A/22, 36-007 KRASNE
+        <br />
+        NIP 5170421631
+        <br />
+        REGON 520727679
+        <br />
+        NR KONTA BANKOWEGO 63 1000 0009 9997 5674 7861
       </div>
       <a class="privacy" href="#">Polityka prywatności i cookies</a>
     </footer>
+    <script src="scripts/js_framework.js"></script>
     <script src="scripts/header_scripts.js"></script>
     <script src="scripts/custom_scripts.js"></script>
   </body>

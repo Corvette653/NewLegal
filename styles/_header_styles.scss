@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "mixins" as *;
 
 $logo-width: 48vw;
 $logo-height: math.div($logo-width, 6);
@@ -15,26 +16,16 @@ $minus-nav-line-height: calc(0px - $nav-line-height);
 $nav-margin-height: calc($nav-height / 22);
 $animation-width: calc($nav-height * 700 / 394);
 
-@mixin anim-template($name, $parametr, $value1, $value2) {
-  @keyframes #{$name} {
-    from {
-      #{$parametr}: $value1;
-    }
-    to {
-      #{$parametr}: $value2;
-    }
-  }
-}
-@include anim-template(nav_anim, margin, $minus-nav-line-height 0px, $nav-margin-height 0px);
-@include anim-template(nav_anim_2, margin, $nav-margin-height 0px, $minus-nav-line-height 0px);
-@include anim-template(back_anim, bottom, 0px, $minus-nav-height);
-@include anim-template(back_anim_2, bottom, $minus-nav-height, 0px);
+@include anim-template(nav_anim, margin, $minus-nav-line-height 0, $nav-margin-height 0);
+@include anim-template(nav_anim_2, margin, $nav-margin-height 0, $minus-nav-line-height 0);
+@include anim-template(back_anim, bottom, 0, $minus-nav-height);
+@include anim-template(back_anim_2, bottom, $minus-nav-height, 0);
 
 header {
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
 
   .main-header {
@@ -78,7 +69,7 @@ header {
     margin: 0 calc(50vw - $animation-width / 2);
   }
   .background-video.closed {
-    bottom: 0px;
+    bottom: 0;
   }
   .background-video.opening {
     animation: back_anim 1s ease 0s 1 normal both;
@@ -93,23 +84,21 @@ header {
   .navigation {
     position: absolute;
     top: $header-height;
-    right: 0px;
-    left: 0px;
+    right: 0;
+    left: 0;
 
     li a {
       line-height: $nav-line-height;
       color: black;
-      font-size: 30px;
-      display: block;
       background-color: white;
       text-align: center;
-      text-decoration: none;
+      display: block;
       position: relative;
       z-index: 1;
     }
   }
   .navigation.closed li a {
-    margin: $minus-nav-line-height 0px;
+    margin: $minus-nav-line-height 0;
   }
   .navigation.opening li a {
     animation: nav_anim 1s ease 0s 1 normal both;

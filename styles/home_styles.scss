@@ -1,0 +1,33 @@
+@use "header_styles";
+@use "tytul";
+@use "jak_dzialamy";
+@use "uslugi";
+@use "zaufali_mi";
+@use "o_mnie";
+@use "blog";
+@use "kontakt";
+@use "footer_styles";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Rubik";
+  font-size: 3.7vw;
+}
+a {
+  text-decoration: none;
+}
+body.no_scroll {
+  overflow-y: hidden;
+}
+#main-content {
+  margin-top: 24vw;
+}
+section {
+  position: relative;
+  overflow: hidden;
+}
+

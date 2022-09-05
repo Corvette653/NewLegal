@@ -1,0 +1,22 @@
+@mixin triangle-left($theme, $height) {
+  width: 0;
+  height: 0;
+  border-right: 100vw solid $theme;
+  border-bottom: $height solid transparent;
+}
+@mixin triangle-right($theme, $height) {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid $theme;
+  border-bottom: $height solid transparent;
+}
+@mixin anim-template($name, $parametr, $value1, $value2) {
+  @keyframes #{$name} {
+    from {
+      #{$parametr}: $value1;
+    }
+    to {
+      #{$parametr}: $value2;
+    }
+  }
+}

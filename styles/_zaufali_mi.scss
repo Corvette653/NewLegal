@@ -1,0 +1,43 @@
+@use "mixins" as *;
+
+#zaufali_mi {
+  //section:nth-of-type(4)
+  .triangle {
+    @include triangle-left(black, 3.6vw);
+  }
+  .title {
+    margin: 4.5vw 0 4.5vw 7vw;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4.5vw;
+
+    a:nth-of-type(odd) {
+      margin-left: 10vw;
+    }
+    a:nth-of-type(even) {
+      margin-right: 10vw;
+    }
+    a:nth-of-type(1) img {
+      width: 41.75vw;
+    }
+    a:nth-of-type(2) img {
+      width: 29vw;
+    }
+    a:nth-of-type(3) img {
+      width: 39vw;
+    }
+    a:nth-of-type(4) img {
+      width: 31.8vw;
+    }
+    a:nth-of-type(5) img {
+      width: 30.3vw;
+    }
+    a:nth-of-type(6) img {
+      width: 18vw;
+    }
+  }
+}
