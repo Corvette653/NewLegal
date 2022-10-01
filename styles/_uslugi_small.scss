@@ -82,6 +82,12 @@
       }
     }
   }
+  .tbl {
+    display: none;
+  }
+  .triangle {
+    @include triangle-right(white, 3.6vw);
+  }
 }
 
 .bookmarks {

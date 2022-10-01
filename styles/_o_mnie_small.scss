@@ -6,14 +6,14 @@
   $section-height: math.div(100vw * 579, 673);
 
   background-color: black;
-  height: $section-height;
+  height: $section-height - 3vw;
 
   .triangle {
-    @include triangle-right(white, 2.7vw);
+    @include triangle-right(#12485f, 1.8vw);
   }
   .portrait {
     position: absolute;
-    top: 2vw;
+    top: -2vw;
     width: 100vw;
   }
   .cosmic_img {

@@ -1,12 +1,12 @@
-@use "header_styles";
-@use "tytul";
-@use "jak_dzialamy";
-@use "uslugi";
-@use "zaufali_mi";
-@use "o_mnie";
-@use "blog";
-@use "kontakt";
-@use "footer_styles";
+@use "header_styles_small";
+@use "tytul_small";
+@use "jak_dzialamy_small";
+@use "uslugi_small";
+@use "zaufali_mi_small";
+@use "o_mnie_small";
+@use "blog_small";
+@use "kontakt_small";
+@use "footer_styles_small";
 
 * {
   box-sizing: border-box;
@@ -30,4 +30,3 @@ section {
   position: relative;
   overflow: hidden;
 }
-

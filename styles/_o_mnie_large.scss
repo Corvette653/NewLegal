@@ -1,0 +1,38 @@
+@use "sass:math";
+@use "mixins" as *;
+
+#o_mnie {
+  //section:nth-of-type(5)
+  $section-height: 50vw;
+
+  background-color: black;
+  height: $section-height;
+
+  .portrait {
+    height: 40vw;
+    position: absolute;
+    top: 7.3vw;
+    left: 7.3vw;
+  }
+  .cosmic_img {
+    display: none;
+  }
+  .text {
+    .title {
+      color: white;
+      font-size: 2rem;
+      text-align: right;
+      margin: 5.2vw 15.6vw 10.4vw 0;
+    }
+    .content {
+      color: grey;
+      font-size: 1.6rem;
+      margin: 0 5.2vw 0 45vw;
+      text-align: justify;
+      position: relative;
+    }
+  }
+  .triangle {
+    @include triangle-left(#12485f, 1.5vw);
+  }
+}

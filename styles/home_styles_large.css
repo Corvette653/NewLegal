@@ -1,0 +1,546 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: white;
+  padding: 1vw 0 0.8vw 3.1vw;
+}
+header .main-header {
+  float: left;
+  height: 3.1vw;
+}
+header .main-header .logo {
+  display: inline-block;
+  height: 3.1vw;
+}
+header .main-header .logo img {
+  display: inline-block;
+  height: 3.1vw;
+}
+header .main-header .hamburger {
+  display: none;
+}
+header .background-video {
+  display: none;
+}
+header .navigation {
+  float: left;
+  margin-left: 2.6vw;
+}
+header .navigation li {
+  display: inline-block;
+  margin: 0 2.6vw;
+}
+header .navigation li a {
+  display: inline-block;
+  color: black;
+  line-height: 3.1vw;
+}
+
+#tytul {
+  height: 56.2857142857vw;
+}
+#tytul .background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+}
+#tytul .logo {
+  position: absolute;
+  bottom: 20vw;
+  left: 5vw;
+  width: 55.75vw;
+}
+#tytul .description {
+  position: absolute;
+  bottom: 15vw;
+  left: 5vw;
+}
+#tytul .description .title {
+  font-size: 3.3rem;
+  color: #fdfdfd;
+  text-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#tytul .description .content {
+  display: none;
+}
+#tytul .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100vw solid #12485F;
+  border-top: 4vw solid transparent;
+}
+
+#jak_dzialamy {
+  background-color: #12485F;
+}
+#jak_dzialamy .content {
+  padding: 6vw 13vw 10vw;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+#jak_dzialamy .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  width: 0;
+  height: 0;
+  border-right: 100vw solid black;
+  border-top: 4vw solid transparent;
+}
+
+#uslugi {
+  background: black;
+  padding: 7.2vw 5.2vw 5.2vw;
+}
+#uslugi .col {
+  display: none;
+}
+#uslugi .tbl div a {
+  display: block;
+}
+#uslugi .tbl div a span {
+  font-size: 1.4rem;
+  color: white;
+}
+#uslugi .tbl div:first-of-type a:first-of-type {
+  width: 15.9vw;
+  margin: 0 auto;
+}
+#uslugi .tbl div:first-of-type a:first-of-type span {
+  display: block;
+  text-align: center;
+  margin: 0 -15% 2vw;
+}
+#uslugi .tbl div:first-of-type a:first-of-type img {
+  width: 15.9vw;
+}
+#uslugi .tbl div:nth-of-type(2) a:first-of-type {
+  float: left;
+  margin-left: 6.2vw;
+}
+#uslugi .tbl div:nth-of-type(2) a:first-of-type span {
+  line-height: 10.5vw;
+  margin-right: 5.2vw;
+  display: block;
+  float: left;
+}
+#uslugi .tbl div:nth-of-type(2) a:first-of-type img {
+  width: 6.8vw;
+}
+#uslugi .tbl div:nth-of-type(2) a:nth-of-type(2) {
+  float: right;
+  margin-right: 8.3vw;
+  margin-top: 0.8vw;
+}
+#uslugi .tbl div:nth-of-type(2) a:nth-of-type(2) img {
+  width: 10.3vw;
+}
+#uslugi .tbl div:nth-of-type(2) a:nth-of-type(2) span {
+  line-height: 9vw;
+  margin-left: 1vw;
+  display: block;
+  float: right;
+}
+#uslugi .tbl div:nth-of-type(3) {
+  margin: 7.8vw 0;
+}
+#uslugi .tbl div:nth-of-type(3) a:first-of-type {
+  clear: both;
+  float: left;
+}
+#uslugi .tbl div:nth-of-type(3) a:first-of-type span {
+  line-height: 8.3vw;
+  margin-right: 3vw;
+  display: block;
+  float: left;
+}
+#uslugi .tbl div:nth-of-type(3) a:first-of-type img {
+  width: 8.15vw;
+}
+#uslugi .tbl div:nth-of-type(3) a:nth-of-type(2) {
+  float: right;
+  margin-right: 0.5vw;
+  margin-top: 1vw;
+}
+#uslugi .tbl div:nth-of-type(3) a:nth-of-type(2) img {
+  width: 12.5vw;
+}
+#uslugi .tbl div:nth-of-type(3) a:nth-of-type(2) span {
+  line-height: 6.6vw;
+  margin-left: 2vw;
+  display: block;
+  float: right;
+}
+#uslugi .tbl div:nth-of-type(4) a:first-of-type {
+  clear: both;
+  float: left;
+  margin-top: 1.3vw;
+}
+#uslugi .tbl div:nth-of-type(4) a:first-of-type span {
+  line-height: 2.23vw;
+  margin-right: 4vw;
+  display: block;
+  float: left;
+}
+#uslugi .tbl div:nth-of-type(4) a:first-of-type img {
+  width: 8.3vw;
+}
+#uslugi .tbl div:nth-of-type(4) a:nth-of-type(2) {
+  float: right;
+  margin-right: 8.3vw;
+}
+#uslugi .tbl div:nth-of-type(4) a:nth-of-type(2) img {
+  width: 9.4vw;
+}
+#uslugi .tbl div:nth-of-type(4) a:nth-of-type(2) span {
+  line-height: 11.5vw;
+  margin-left: 2.6vw;
+  display: block;
+  float: right;
+}
+#uslugi .tbl div:nth-of-type(5) {
+  padding-right: 5vw;
+}
+#uslugi .tbl div:nth-of-type(5) a:first-of-type {
+  clear: both;
+  width: 15.58vw;
+  margin: 0 auto;
+}
+#uslugi .tbl div:nth-of-type(5) a:first-of-type span {
+  display: block;
+  text-align: center;
+  margin: 2vw -10% 0;
+}
+#uslugi .tbl div:nth-of-type(5) a:first-of-type img {
+  width: 15.58vw;
+}
+#uslugi .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100vw solid white;
+  border-top: 5.2vw solid transparent;
+}
+
+.bookmarks {
+  display: none;
+}
+
+#zaufali_mi {
+  margin-top: -2vw;
+}
+#zaufali_mi .title {
+  margin-left: 3vw;
+  font-size: 2rem;
+}
+#zaufali_mi .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10vw 0 9vw;
+}
+#zaufali_mi .content a:nth-of-type(1) {
+  order: 4;
+}
+#zaufali_mi .content a:nth-of-type(1) img, #zaufali_mi .content a:nth-of-type(1) picture {
+  width: 29.5vw;
+}
+#zaufali_mi .content a:nth-of-type(2) {
+  order: 2;
+}
+#zaufali_mi .content a:nth-of-type(2) img, #zaufali_mi .content a:nth-of-type(2) picture {
+  width: 24vw;
+}
+#zaufali_mi .content a:nth-of-type(3) {
+  display: none;
+}
+#zaufali_mi .content a:nth-of-type(4) {
+  order: 3;
+}
+#zaufali_mi .content a:nth-of-type(4) img, #zaufali_mi .content a:nth-of-type(4) picture {
+  width: 19vw;
+}
+#zaufali_mi .content a:nth-of-type(5) {
+  order: 1;
+}
+#zaufali_mi .content a:nth-of-type(5) img, #zaufali_mi .content a:nth-of-type(5) picture {
+  width: 7.5vw;
+}
+#zaufali_mi .content a:nth-of-type(6) {
+  display: none;
+}
+#zaufali_mi .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100vw solid black;
+  border-top: 1vw solid transparent;
+}
+
+#o_mnie {
+  background-color: black;
+  height: 50vw;
+}
+#o_mnie .portrait {
+  height: 40vw;
+  position: absolute;
+  top: 7.3vw;
+  left: 7.3vw;
+}
+#o_mnie .cosmic_img {
+  display: none;
+}
+#o_mnie .text .title {
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  margin: 5.2vw 15.6vw 10.4vw 0;
+}
+#o_mnie .text .content {
+  color: grey;
+  font-size: 1.6rem;
+  margin: 0 5.2vw 0 45vw;
+  text-align: justify;
+  position: relative;
+}
+#o_mnie .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  width: 0;
+  height: 0;
+  border-right: 100vw solid #12485f;
+  border-top: 1.5vw solid transparent;
+}
+
+#blog {
+  background-color: #12485f;
+}
+#blog .lightbulb {
+  display: none;
+}
+#blog .title {
+  color: white;
+  margin: 4vw 0 0 8.5vw;
+  font-size: 2rem;
+}
+#blog .carousel {
+  margin: 5.2vw 0 7.8vw 10vw;
+}
+#blog .carousel .articles {
+  display: flex;
+  gap: 20vw;
+  transition: transform 1s;
+}
+#blog .carousel .articles .article img {
+  width: 30vw;
+}
+#blog .carousel .articles .article .article_date {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  margin-top: 1.5vw;
+}
+#blog .carousel .articles .article .article_title {
+  color: white;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+}
+#blog .carousel .articles .article a.more {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #97C7FF;
+}
+#blog .carousel .article.active {
+  display: block;
+}
+#blog .carousel .control {
+  position: absolute;
+  bottom: 2.6vw;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#blog .carousel .control .circle {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+#blog .carousel .control .circle.active {
+  background-color: black;
+}
+#blog .carousel .control .circle:last-of-type {
+  display: none;
+}
+#blog .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100vw solid black;
+  border-top: 2.5vw solid transparent;
+}
+
+#kontakt {
+  background-color: black;
+  padding-bottom: 10vw;
+}
+#kontakt .form {
+  float: right;
+  color: white;
+}
+#kontakt .form .title {
+  font-size: 1.6rem;
+  margin-top: 6.75vw;
+}
+#kontakt .form form {
+  display: block;
+  margin: 3vw 3.75vw 0 0;
+}
+#kontakt .form form label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 1vw 0 2vw;
+}
+#kontakt .form form label.top {
+  display: none;
+}
+#kontakt .form form input,
+#kontakt .form form textarea {
+  display: block;
+  line-height: 2.1rem;
+  width: 38.5vw;
+  border: none;
+  padding: 0 0.5vw;
+  font-family: inherit;
+  font-size: inherit;
+}
+#kontakt .form form input:focus,
+#kontakt .form form textarea:focus {
+  outline: none;
+}
+#kontakt .form form button {
+  all: unset;
+  cursor: pointer;
+  color: #2CC5F4;
+  font-style: italic;
+  font-weight: 300;
+  float: right;
+  font-size: 1.4rem;
+  margin-top: 2vw;
+}
+#kontakt .asap {
+  position: relative;
+  height: 26.4480408859vw;
+  width: 45vw;
+  text-align: center;
+  margin: 10vw 0 0 4vw;
+  float: left;
+}
+#kontakt .asap img {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+#kontakt .asap .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 26.4480408859vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#kontakt .asap .content .title {
+  color: white;
+  margin: 0;
+  font-size: 1.6rem;
+}
+#kontakt .asap .content a {
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+}
+#kontakt .asap .content a:first-of-type {
+  margin: 1vw;
+}
+
+#main-footer {
+  padding: 5vw 0 0 5vw;
+}
+#main-footer .logo {
+  width: 15.6vw;
+}
+#main-footer .data {
+  padding: 1vw 0 0;
+  font-size: 1.1rem;
+}
+#main-footer .privacy {
+  display: block;
+  font-size: 1.1rem;
+  color: black;
+  float: right;
+  margin: 1vw 2.75vw 1vw 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Rubik";
+  font-size: 1.14vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+body.no_scroll {
+  overflow: hidden;
+}
+
+#main-content {
+  margin-top: 4.9vw;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}/*# sourceMappingURL=home_styles_large.css.map */

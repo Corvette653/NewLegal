@@ -16,8 +16,18 @@ $minus-nav-line-height: calc(0px - $nav-line-height);
 $nav-margin-height: calc($nav-height / 22);
 $animation-width: calc($nav-height * 700 / 394);
 
-@include anim-template(nav_anim, margin, $minus-nav-line-height 0, $nav-margin-height 0);
-@include anim-template(nav_anim_2, margin, $nav-margin-height 0, $minus-nav-line-height 0);
+@include anim-template(
+  nav_anim,
+  margin,
+  $minus-nav-line-height 0,
+  $nav-margin-height 0
+);
+@include anim-template(
+  nav_anim_2,
+  margin,
+  $nav-margin-height 0,
+  $minus-nav-line-height 0
+);
 @include anim-template(back_anim, bottom, 0, $minus-nav-height);
 @include anim-template(back_anim_2, bottom, $minus-nav-height, 0);
 

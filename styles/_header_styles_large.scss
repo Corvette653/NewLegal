@@ -1,0 +1,48 @@
+@use "sass:math";
+
+$logo-height: 3.1vw;
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: white;
+  padding: 1vw 0 0.8vw 3.1vw;
+
+  .main-header {
+    float: left;
+    height: $logo-height;
+    .logo {
+      display: inline-block;
+      height: $logo-height;
+
+      img {
+        display: inline-block;
+        height: $logo-height;
+      }
+    }
+    .hamburger {
+      display: none;
+    }
+  }
+
+  .background-video {
+    display: none;
+  }
+
+  .navigation {
+    float: left;
+    margin-left: 2.6vw;
+    li {
+      display: inline-block;
+      margin: 0 2.6vw;
+      a {
+        display: inline-block;
+        color: black;
+        line-height: $logo-height;
+      }
+    }
+  }
+}

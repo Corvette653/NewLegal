@@ -14,10 +14,19 @@ function close_bookmark() {
 
 async function set_active_slide(n) {
   n--;
-  carousel_articles.setAttribute(
+  if(window.matchMedia("(max-width: 767px)").matches) {
+    carousel_articles.setAttribute(
     "style",
-    "transform: translateX(-" + n * 100 + "vw);"
+    "transform: translateX(-" + (n * 100) + "vw);"
   );
+  } else if(window.matchMedia("(min-width: 992px)").matches) {
+    carousel_articles.setAttribute(
+      "style",
+      "transform: translateX(-" + (n * 50) + "vw);"
+    );
+  }
+  else {}
+  
   for (var i = 0; i < carousel_control.length; i++)
     carousel_control[i].classList.remove("active");
   carousel_control[n].classList.add("active");

@@ -1,0 +1,32 @@
+@use "header_styles_large";
+@use "tytul_large";
+@use "jak_dzialamy_large";
+@use "uslugi_large";
+@use "zaufali_mi_large";
+@use "o_mnie_large";
+@use "blog_large";
+@use "kontakt_large";
+@use "footer_styles_large";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Rubik";
+  font-size: 1.14vw;
+}
+a {
+  text-decoration: none;
+}
+body.no_scroll {
+  overflow: hidden;
+}
+#main-content {
+  margin-top: 4.9vw;
+}
+section {
+  position: relative;
+  overflow: hidden;
+}

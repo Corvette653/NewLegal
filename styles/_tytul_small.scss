@@ -42,6 +42,9 @@
   //     padding: 32.93px;
   //   }
   // }
+  .logo {
+    display: none;
+  }
   .description {
     position: absolute;
     bottom: 9vw;
@@ -50,10 +53,10 @@
     color: #fdfdfd;
     text-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
     .title {
-      font-size: 42px;
+      font-size: 1.7rem;
     }
     .content {
-      font-size: 30px;
+      font-size: 1.2rem;
       margin-top: 5vw;
     }
   }

@@ -160,6 +160,9 @@ header .navigation.closing li a {
   left: calc(50vw - calc(100vh - 24vw) * 700 / 394 / 2);
   z-index: -1;
 }
+#tytul .logo {
+  display: none;
+}
 #tytul .description {
   position: absolute;
   bottom: 9vw;
@@ -169,10 +172,10 @@ header .navigation.closing li a {
   text-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #tytul .description .title {
-  font-size: 42px;
+  font-size: 1.7rem;
 }
 #tytul .description .content {
-  font-size: 30px;
+  font-size: 1.2rem;
   margin-top: 5vw;
 }
 
@@ -286,6 +289,19 @@ header .navigation.closing li a {
 #uslugi .col:nth-of-type(2) .item:nth-of-type(4) img {
   width: 24.5vw;
 }
+#uslugi .tbl {
+  display: none;
+}
+#uslugi .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100vw solid white;
+  border-top: 3.6vw solid transparent;
+}
 
 .bookmarks .bookmark {
   position: fixed;
@@ -336,10 +352,16 @@ header .navigation.closing li a {
 }
 
 #zaufali_mi .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
   width: 0;
   height: 0;
   border-right: 100vw solid black;
-  border-bottom: 3.6vw solid transparent;
+  border-top: 2.7vw solid transparent;
 }
 #zaufali_mi .title {
   margin: 4.5vw 0 4.5vw 7vw;
@@ -378,17 +400,21 @@ header .navigation.closing li a {
 
 #o_mnie {
   background-color: black;
-  height: 86.0326894502vw;
+  height: 83.0326894502vw;
 }
 #o_mnie .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
   width: 0;
   height: 0;
-  border-left: 100vw solid white;
-  border-bottom: 2.7vw solid transparent;
+  border-left: 100vw solid #12485f;
+  border-top: 1.8vw solid transparent;
 }
 #o_mnie .portrait {
   position: absolute;
-  top: 2vw;
+  top: -2vw;
   width: 100vw;
 }
 #o_mnie .cosmic_img {
@@ -409,48 +435,21 @@ header .navigation.closing li a {
   margin-top: 4.5vw;
 }
 
-@-webkit-keyframes carousel_anim {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes carousel_anim {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@-webkit-keyframes carousel_anim_2 {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100vw);
-  }
-}
-@keyframes carousel_anim_2 {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100vw);
-  }
-}
 #blog {
   background-color: #12485f;
   padding-left: 8.5vw;
 }
 #blog .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
   width: 0;
   height: 0;
   border-right: 100vw solid black;
-  border-bottom: 1.8vw solid transparent;
+  border-top: 1.2vw solid transparent;
 }
 #blog .lightbulb {
   position: absolute;
@@ -503,8 +502,8 @@ header .navigation.closing li a {
   text-align: center;
 }
 #blog .carousel .control .circle {
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 2.5vw;
+  height: 2.5vw;
   display: inline-block;
   border: 1px solid black;
   border-radius: 50%;
@@ -516,29 +515,29 @@ header .navigation.closing li a {
 #kontakt {
   background-color: black;
 }
-#kontakt .triangle {
-  width: 0;
-  height: 0;
-  border-left: 100vw solid #12485f;
-  border-bottom: 1.2vw solid transparent;
+#kontakt .form {
+  margin: 0 7.5vw;
 }
-#kontakt .title {
+#kontakt .form .title {
   color: white;
-  margin: 12vw 0 0 7.5vw;
+  margin-top: 12vw;
 }
-#kontakt form {
+#kontakt .form form {
   display: block;
-  margin: 9vw 7.5vw 19vw;
+  margin: 9vw 0 19vw;
 }
-#kontakt form label {
+#kontakt .form form label {
   display: block;
   color: white;
   font-size: 0.84rem;
   font-weight: 300;
   margin: 5vw 0 2vw;
 }
-#kontakt form input,
-#kontakt form textarea {
+#kontakt .form form label.bottom {
+  display: none;
+}
+#kontakt .form form input,
+#kontakt .form form textarea {
   display: block;
   line-height: 2.1rem;
   width: 100%;
@@ -547,11 +546,11 @@ header .navigation.closing li a {
   font-family: inherit;
   font-size: inherit;
 }
-#kontakt form input:focus,
-#kontakt form textarea:focus {
+#kontakt .form form input:focus,
+#kontakt .form form textarea:focus {
   outline: none;
 }
-#kontakt form button {
+#kontakt .form form button {
   all: unset;
   cursor: pointer;
   color: #97c7ff;
@@ -639,4 +638,4 @@ body.no_scroll {
 section {
   position: relative;
   overflow: hidden;
-}/*# sourceMappingURL=home_styles.css.map */
+}/*# sourceMappingURL=home_styles_small.css.map */

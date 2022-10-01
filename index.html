@@ -4,18 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NewLegal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap"
-      rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/home_styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap"
+      />
+    </noscript>
+
+    <link
+      rel="stylesheet"
+      href="styles/home_styles_small.css"
+      media="(max-width: 767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/home_styles_medium.css"
+      media="(min-width: 768px) and (max-width: 991px)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/home_styles_large.css"
+      media="(min-width: 992px)"
+    />
   </head>
   <body>
     <header>
       <div class="main-header">
-        <a class="logo" href="#"><img src="img/logo_header.png" /></a>
+        <a class="logo" href="#"><img src="img/logo_black.png" /></a>
         <a href="javascript:show_menu()" class="hamburger">
           <hr />
           <hr />
@@ -49,10 +76,12 @@
         <a href="javascript:some_function()" class="contrast">
           <img src="img/contrast.png" />
         </a> -->
+        <img class="logo" src="img/logo_white.png" />
         <div class="description">
-          <div class="title">Nowoczesna Kandcelaria</div>
+          <div class="title">Nowoczesna Kancelaria</div>
           <div class="content">Obsługa prawna<br />na miarę XXI wieku</div>
         </div>
+        <div class="triangle"></div>
       </section>
       <section id="jak_dzialamy">
         <div class="content">
@@ -66,6 +95,7 @@
           Prowadzimy rozprawy związane z prawem cywilnym, spadkowym, rodzinnym
           oraz karne.
         </div>
+        <div class="triangle"></div>
       </section>
       <section id="uslugi">
         <div class="col">
@@ -112,7 +142,58 @@
           </a>
           <div style="clear: both; height: 0"></div>
         </div>
+        <div class="tbl">
+          <div>
+            <a href="javascript:show_bookmark(2)" class="item">
+              <span>Kompleksowa obsługa firm</span>
+              <img src="img/wektory_2.png" />
+            </a>
+            <div style="clear: both"></div>
+          </div>
+          <div>
+            <a href="javascript:show_bookmark(1)" class="item">
+              <span>Umowy</span>
+              <img src="img/wektory_1.png" />
+            </a>
+            <a href="javascript:show_bookmark(3)" class="item">
+              <img src="img/wektory_3.png" />
+              <span>RODO</span>
+            </a>
+            <div style="clear: both"></div>
+          </div>
+          <div>
+            <a href="javascript:show_bookmark(4)" class="item">
+              <span>E-commerce</span>
+              <img src="img/wektory_4.png" />
+            </a>
+            <a href="javascript:show_bookmark(5)" class="item">
+              <img src="img/wektory_5.png" />
+              <span>Szkolenia</span>
+            </a>
+            <div style="clear: both"></div>
+          </div>
+          <div>
+            <a href="javascript:show_bookmark(8)" class="item">
+              <img src="img/wektory_8.png" />
+              <span><br />Obsługa klienta<br />indywidualnego<br /></span>
+            </a>
+            <a href="javascript:show_bookmark(7)" class="item">
+              <img src="img/wektory_7.png" />
+              <span>Prawo IT</span>
+            </a>
+            <div style="clear: both"></div>
+          </div>
+          <div>
+            <a href="javascript:show_bookmark(6)" class="item">
+              <img src="img/wektory_6.png" />
+              <span>Postępowania sądowe</span>
+            </a>
+            <div style="clear: both"></div>
+          </div>
+          <div style="clear: both; width: 0; height: 0"></div>
+        </div>
         <div style="clear: both; height: 0"></div>
+        <div class="triangle"></div>
       </section>
       <div class="bookmarks">
         <div class="bookmark closed">
@@ -221,20 +302,32 @@
         </div>
       </div>
       <section id="zaufali_mi">
-        <div class="triangle"></div>
         <div class="title">Wybrani klienci</div>
         <div class="content">
           <a href="https://itsmsoftware.pl"><img src="img/itsm.png" /></a>
           <a href="https://www.astra.com.pl"><img src="img/astra.png" /></a>
           <a href="https://opgk.rzeszow.pl"><img src="img/opgk.png" /></a>
           <a href="#"><img src="img/giw.png" /></a>
-          <a href="https://salesbook.com"><img src="img/salesbook.png" /></a>
+          <!-- <a href="https://salesbook.com"><img src="img/salesbook.png" /></a> -->
+          <a href="#">
+            <picture>
+              <source
+                media="(max-width:767px)"
+                srcset="img/salesbook_small.png"
+              />
+              <source
+                media="(min-width:992px)"
+                srcset="img/salesbook_large.png"
+              />
+              <img src="img/salesbook_large.png" alt="Salesbook" />
+            </picture>
+          </a>
           <a href="#"><img src="img/dare.png" /></a>
         </div>
         <div style="clear: both; height: 0"></div>
+        <div class="triangle"></div>
       </section>
       <section id="o_mnie">
-        <div class="triangle"></div>
         <img class="portrait" src="img/portret.png" />
         <img class="cosmic_img" src="img/cosmic_lines_1.png" />
         <div class="text">
@@ -248,9 +341,9 @@
             renomowanych lubelskich kancelariach.
           </div>
         </div>
+        <div class="triangle"></div>
       </section>
       <section id="blog">
-        <div class="triangle"></div>
         <img class="lightbulb" src="img/lightbulb.png" />
         <div class="title">Blog</div>
         <div class="carousel">
@@ -266,9 +359,7 @@
             <div class="article">
               <img src="img/blog_img_1.png" />
               <div class="article_date">22/06/2021</div>
-              <div class="article_title">
-                Inny, starszy, mniej ważny nakaz
-              </div>
+              <div class="article_title">Inny, starszy, mniej ważny nakaz</div>
               <a href="#" class="more">Czytaj więcej</a>
             </div>
             <div class="article">
@@ -286,33 +377,40 @@
             <a href="javascript:set_active_slide(3)" class="circle"></a>
           </div>
         </div>
+        <div class="triangle"></div>
       </section>
       <section id="kontakt">
-        <div class="triangle"></div>
-        <div class="title">Formularz kontaktowy</div>
-        <form>
-          <label for="name_ci">Imię i nazwisko</label>
-          <input type="text" id="name_ci" />
-          <label for="mail_ci">Adres e-mail</label>
-          <input type="email" id="mail_ci" />
-          <label for="content_ci">Treść wiadomości</label>
-          <textarea id="content_ci"></textarea>
-          <button>Wyślij wiadomość</button>
-          <div style="clear: both; height: 0"></div>
-        </form>
+        <div class="form">
+          <div class="title">Formularz kontaktowy</div>
+          <form>
+            <label for="name_ci" class="top">Imię i nazwisko</label>
+            <input type="text" id="name_ci" />
+            <label for="name_ci" class="bottom">Imię i nazwisko</label>
+
+            <label for="mail_ci" class="top">Adres e-mail</label>
+            <input type="email" id="mail_ci" />
+            <label for="mail_ci" class="bottom">Adres e-mail</label>
+            
+            <label for="content_ci" class="top">Treść wiadomości</label>
+            <textarea id="content_ci"></textarea>
+            <label for="content_ci" class="bottom">Treść wiadomości</label>
+
+            <button>Wyślij wiadomość</button>
+            <div style="clear: both; height: 0"></div>
+          </form>
+        </div>
         <div class="asap">
           <img src="img/contact.png" />
           <div class="content">
             <div class="title">Szybki kontakt</div>
             <a href="tel:+48 726 103 160">+48 726 103 160</a>
-            <a href="mailto:buczek@newlegal.pl">buczek@newlegal.pl</a>
+            <a href="mailto:kontakt@newlegal.pl">kontakt@newlegal.pl</a>
           </div>
         </div>
       </section>
     </main>
-
     <footer id="main-footer">
-      <img class="logo" src="img/logo_header.png" />
+      <img class="logo" src="img/logo_black.png" />
       <div class="data">
         KRASNE 32A/22, 36-007 KRASNE
         <br />
