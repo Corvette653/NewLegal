@@ -223,7 +223,6 @@ header .navigation.closing li a {
 }
 #uslugi {
   background: black;
-  padding: 0 12vw;
 }
 #uslugi .col {
   width: 50%;
@@ -240,6 +239,9 @@ header .navigation.closing li a {
   padding-top: 5vw;
   color: white;
   margin: 0 -100%;
+}
+#uslugi .col:first-of-type {
+  padding-left: 12vw;
 }
 #uslugi .col:first-of-type .item {
   float: left;
@@ -262,6 +264,9 @@ header .navigation.closing li a {
 #uslugi .col:first-of-type .item:nth-of-type(4) img {
   margin-left: -6vw;
   width: 27vw;
+}
+#uslugi .col:nth-of-type(2) {
+  padding-right: 12vw;
 }
 #uslugi .col:nth-of-type(2) .item {
   float: right;
@@ -437,7 +442,6 @@ header .navigation.closing li a {
 
 #blog {
   background-color: #12485f;
-  padding-left: 8.5vw;
 }
 #blog .triangle {
   position: absolute;
@@ -460,9 +464,10 @@ header .navigation.closing li a {
 #blog .title {
   color: white;
   margin-top: 5.2vw;
+  margin-left: 8.5vw;
 }
 #blog .carousel {
-  margin: 13.4vw 30vw 13.4vw 0;
+  margin: 13.4vw 30vw 13.4vw 8.5vw;
 }
 #blog .carousel .articles {
   display: flex;

@@ -11,3 +11,5 @@ function hide_menu() {
   close_elem(back, 1000);
   document.querySelector("header .main-header .hamburger").setAttribute("href", "javascript:show_menu()");
 }
+
+document.querySelector("header .navigation").addEventListener("click", hide_menu, { passive: true });

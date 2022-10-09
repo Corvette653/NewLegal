@@ -6,6 +6,7 @@ var carousel_control = document.querySelectorAll(
 var current_slide = 0;
 var blog = document.querySelector("#blog");
 
+// otwieranie i zamykanie zakładek #uslugi
 function show_bookmark(n) {
   open_elem(bookmarks[n - 1], 500);
 }
@@ -16,6 +17,7 @@ function close_bookmark() {
       close_elem(bookmarks[i], 500);
 }
 
+// przyciski karuzeli #blog
 async function set_active_slide(n) {
   if (window.matchMedia("(max-width: 767px)").matches) {
     carousel_articles.setAttribute(
@@ -34,6 +36,7 @@ async function set_active_slide(n) {
   current_slide = n;
 }
 
+// przesuwanie karuzeli #blog
 document.addEventListener("touchstart", handleTouchStart, false);
 document.addEventListener("touchmove", handleTouchMove, false);
 

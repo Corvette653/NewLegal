@@ -81,7 +81,7 @@ header .navigation li a {
 }
 
 #jak_dzialamy {
-  background-color: #12485F;
+  background-color: #12485f;
 }
 #jak_dzialamy .content {
   padding: 6vw 13vw 10vw;
@@ -260,13 +260,15 @@ header .navigation li a {
 #zaufali_mi .content a:nth-of-type(1) {
   order: 4;
 }
-#zaufali_mi .content a:nth-of-type(1) img, #zaufali_mi .content a:nth-of-type(1) picture {
+#zaufali_mi .content a:nth-of-type(1) img,
+#zaufali_mi .content a:nth-of-type(1) picture {
   width: 29.5vw;
 }
 #zaufali_mi .content a:nth-of-type(2) {
   order: 2;
 }
-#zaufali_mi .content a:nth-of-type(2) img, #zaufali_mi .content a:nth-of-type(2) picture {
+#zaufali_mi .content a:nth-of-type(2) img,
+#zaufali_mi .content a:nth-of-type(2) picture {
   width: 24vw;
 }
 #zaufali_mi .content a:nth-of-type(3) {
@@ -275,13 +277,15 @@ header .navigation li a {
 #zaufali_mi .content a:nth-of-type(4) {
   order: 3;
 }
-#zaufali_mi .content a:nth-of-type(4) img, #zaufali_mi .content a:nth-of-type(4) picture {
+#zaufali_mi .content a:nth-of-type(4) img,
+#zaufali_mi .content a:nth-of-type(4) picture {
   width: 19vw;
 }
 #zaufali_mi .content a:nth-of-type(5) {
   order: 1;
 }
-#zaufali_mi .content a:nth-of-type(5) img, #zaufali_mi .content a:nth-of-type(5) picture {
+#zaufali_mi .content a:nth-of-type(5) img,
+#zaufali_mi .content a:nth-of-type(5) picture {
   width: 7.5vw;
 }
 #zaufali_mi .content a:nth-of-type(6) {
@@ -528,6 +532,7 @@ header .navigation li a {
 html {
   font-family: "Rubik";
   font-size: 1.14vw;
+  scroll-behavior: smooth;
 }
 
 a {
