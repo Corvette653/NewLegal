@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NewLegal</title>
+  <meta name="description" content="Kancelaria adwokacka NewLegal, Paweł Buczek, Rzeszów">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap" />
@@ -15,15 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap" />
   </noscript>
 
-  <link rel="stylesheet" href="styles/home_styles_small.css" media="(max-width: 767px)" />
-  <link rel="stylesheet" href="styles/home_styles_medium.css" media="(min-width: 768px) and (max-width: 991px)" />
-  <link rel="stylesheet" href="styles/home_styles_large.css" media="(min-width: 992px)" />
+  <link rel="stylesheet" href="styles/home_styles_small.css" media="(max-width: 949px)" />
+  <link rel="stylesheet" href="styles/home_styles_large.css" media="(min-width: 950px)" />
 </head>
 
 <body>
   <header>
     <div class="main-header">
-      <a class="logo" href="#" onclick="scroll_to(event, 'html', 'start', 0, 'smooth')"><img
+      <a class="logo" href="#" onclick="scroll_to(event, 'html', 'start', 'start', 'smooth')"><img alt="logo NewLegal"
           src="img/logo_black.png" /></a>
       <a href="javascript:show_menu()" class="hamburger">
         <hr />
@@ -34,14 +34,15 @@
 
     <div class="navigation">
       <ul>
-        <li><a href="#jak_dzialamy" onclick="scroll_to(event, '#jak_dzialamy', 'center', 0)" class="closed">Jak
+        <li><a href="#jak_dzialamy" onclick="scroll_to(event, '#jak_dzialamy', 'start', 'center')" class="closed">Jak
             działamy</a></li>
-        <li><a href="#uslugi" onclick="scroll_to(event, '#uslugi', 'start', 0)" class="closed">Usługi</a></li>
-        <li><a href="#zaufali_mi" onclick="scroll_to(event, '#zaufali_mi', 'center', 0)" class="closed">Zaufali mi</a>
+        <li><a href="#uslugi" onclick="scroll_to(event, '#uslugi', 'start', 'center')" class="closed">Usługi</a></li>
+        <li><a href="#zaufali_mi" onclick="scroll_to(event, '#zaufali_mi', 'center', 'center')" class="closed">Zaufali
+            mi</a>
         </li>
-        <li><a href="#o_mnie" onclick="scroll_to(event, '#o_mnie', 'center', 0)" class="closed">O mnie</a></li>
-        <li><a href="#blog" onclick="scroll_to(event, '#blog', 'center', 0)" class="closed">Blog</a></li>
-        <li><a href="#kontakt" onclick="scroll_to(event, '#kontakt', 'center', 0)" class="closed">Kontakt</a></li>
+        <li><a href="#o_mnie" onclick="scroll_to(event, '#o_mnie', 'center', 'center')" class="closed">O mnie</a></li>
+        <li><a href="#blog" onclick="scroll_to(event, '#blog', 'center', 'center')" class="closed">Blog</a></li>
+        <li><a href="#kontakt" onclick="scroll_to(event, '#kontakt', 'start', 'center')" class="closed">Kontakt</a></li>
       </ul>
       <video autoplay muted loop class="background-video">
         <source src="img/stars.mp4" type="video/mp4" />
@@ -63,7 +64,7 @@
         <a href="javascript:some_function()" class="contrast">
           <img src="img/contrast.png" />
         </a> -->
-      <img class="logo" src="img/logo_white.png" />
+      <img class="logo" alt="logo NewLegal" src="img/logo_white.png" />
       <div class="description">
         <div class="title">Nowoczesna Kancelaria</div>
         <div class="content">Obsługa prawna<br />na miarę XXI wieku</div>
@@ -86,25 +87,25 @@
       <div class="col">
         <a disabled-href="javascript:show_bookmark(1)" class="item"
           style="transition: 1s transform; transform: translateX(-50vw);">
-          <img src="img/wektory_1.png" />
+          <img alt="ikona dokumentu z lupą" src="img/wektory_1.png" />
           <span>Umowy</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(3)" class="item"
           style="transition: 1s transform; transform: translateX(-50vw);">
-          <img src="img/wektory_3.png" />
+          <img alt="ikona kłódki" src="img/wektory_3.png" />
           <span>RODO</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(5)" class="item"
           style="transition: 1s transform; transform: translateX(-50vw);">
-          <img src="img/wektory_5.png" />
+          <img alt="ikona biretu" src="img/wektory_5.png" />
           <span>Szkolenia</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(7)" class="item"
           style="transition: 1s transform; transform: translateX(-50vw);">
-          <img src="img/wektory_7.png" />
+          <img alt="ikona żarówki" src="img/wektory_7.png" />
           <span>Prawo IT</span>
         </a>
         <div style="clear: both; height: 0"></div>
@@ -112,25 +113,25 @@
       <div class="col">
         <a disabled-href="javascript:show_bookmark(2)" class="item"
           style="transition: 1s transform; transform: translateX(50vw);">
-          <img src="img/wektory_2.png" />
+          <img alt="ikona uściśniętych dłoni" src="img/wektory_2.png" />
           <span>Kompleksowa<br />obsługa firm</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(4)" class="item"
           style="transition: 1s transform; transform: translateX(50vw);">
-          <img src="img/wektory_4.png" />
+          <img alt="ikona wózka" src="img/wektory_4.png" />
           <span>E-commerce</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(6)" class="item"
           style="transition: 1s transform; transform: translateX(50vw);">
-          <img src="img/wektory_6.png" />
+          <img alt="ikona młotka sędziowskiego" src="img/wektory_6.png" />
           <span>Postępowania sądowe</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(8)" class="item"
           style="transition: 1s transform; transform: translateX(50vw);">
-          <img src="img/wektory_8.png" />
+          <img alt="ikona głowy" src="img/wektory_8.png" />
           <span>Obsługa klienta<br />indywidualnego</span>
         </a>
         <div style="clear: both; height: 0"></div>
@@ -140,19 +141,19 @@
           <a disabled-href="javascript:show_bookmark(2)" class="item"
             style="transition: 1s transform; transform: translateY(-50vw);">
             <span>Kompleksowa obsługa firm</span>
-            <img src="img/wektory_2.png" />
+            <img alt="ikona uściśniętych dłoni" src="img/wektory_2.png" />
           </a>
           <div style="clear: both"></div>
         </div>
         <div>
           <a disabled-href="javascript:show_bookmark(1)" class="item"
             style="transition: 1s transform; transform: translateX(-50vw);">
-            <img src="img/wektory_1.png" />
+            <img alt="ikona dokumentu z lupą" src="img/wektory_1.png" />
             <span>Umowy</span>
           </a>
           <a disabled-href="javascript:show_bookmark(3)" class="item"
             style="transition: 1s transform; transform: translateX(50vw);">
-            <img src="img/wektory_3.png" />
+            <img alt="ikona kłódki" src="img/wektory_3.png" />
             <span>RODO</span>
           </a>
           <div style="clear: both"></div>
@@ -160,12 +161,12 @@
         <div>
           <a disabled-href="javascript:show_bookmark(4)" class="item"
             style="transition: 1s transform; transform: translateX(-50vw);">
-            <img src="img/wektory_4.png" />
+            <img alt="ikona wózka" src="img/wektory_4.png" />
             <span>E-commerce</span>
           </a>
           <a disabled-href="javascript:show_bookmark(5)" class="item"
             style="transition: 1s transform; transform: translateX(50vw);">
-            <img src="img/wektory_5.png" />
+            <img alt="ikona biretu" src="img/wektory_5.png" />
             <span>Szkolenia</span>
           </a>
           <div style="clear: both"></div>
@@ -173,12 +174,12 @@
         <div>
           <a disabled-href="javascript:show_bookmark(8)" class="item"
             style="transition: 1s transform; transform: translateX(-50vw);">
-            <img src="img/wektory_8.png" />
+            <img alt="ikona głowy" src="img/wektory_8.png" />
             <span>Obsługa klienta<br />indywidualnego</span>
           </a>
           <a disabled-href="javascript:show_bookmark(7)" class="item"
             style="transition: 1s transform; transform: translateX(50vw);">
-            <img src="img/wektory_7.png" />
+            <img alt="ikona żarówki" src="img/wektory_7.png" />
             <span>Prawo IT</span>
           </a>
           <div style="clear: both"></div>
@@ -186,7 +187,7 @@
         <div>
           <a disabled-href="javascript:show_bookmark(6)" class="item"
             style="transition: 1s transform; transform: translateY(50vw);">
-            <img src="img/wektory_6.png" />
+            <img alt="ikona młotka sędziowskiego" src="img/wektory_6.png" />
             <span>Postępowania sądowe</span>
           </a>
           <div style="clear: both"></div>
@@ -305,26 +306,26 @@
     <section id="zaufali_mi">
       <div class="title">Wybrani klienci</div>
       <div class="content" style="transition: 1s transform; transform: translateX(100vw);">
-        <a href="https://itsmsoftware.pl"><img src="img/itsm.png" /></a>
-        <a href="https://www.astra.com.pl"><img src="img/astra.png" /></a>
-        <a href="https://opgk.rzeszow.pl"><img src="img/opgk.png" /></a>
-        <a href="#"><img src="img/giw.png" /></a>
+        <a href="https://itsmsoftware.pl"><img alt="logo firmy ITSM Software" src="img/itsm.png" /></a>
+        <a href="https://www.astra.com.pl"><img alt="logo firmy Astra" src="img/astra.png" /></a>
+        <a href="https://opgk.rzeszow.pl"><img alt="logo firmy OPGK Rzeszów" src="img/opgk.png" /></a>
+        <a href="#"><img alt="logo firmy GIW" src="img/giw.png" /></a>
         <!-- <a href="https://salesbook.com"><img src="img/salesbook.png" /></a> -->
         <a href="#">
           <picture>
             <source media="(max-width:767px)" srcset="img/salesbook_small.png" />
             <source media="(min-width:992px)" srcset="img/salesbook_large.png" />
-            <img src="img/salesbook_large.png" alt="Salesbook" />
+            <img alt="logo firmy Salesbook" src="img/salesbook_large.png" />
           </picture>
         </a>
-        <a href="#"><img src="img/dare.png" /></a>
+        <a href="#"><img alt="logo firmy Dare" src="img/dare.png" /></a>
       </div>
       <div style="clear: both; height: 0"></div>
       <div class="triangle"></div>
     </section>
     <section id="o_mnie">
-      <img class="portrait" src="img/portret.png" style="transition: 1s opacity; opacity: 0;" />
-      <img class="cosmic_img" src="img/cosmic_lines_1.png" />
+      <img alt="portret właściciela kancelarii NewLegal" class="portrait" src="img/portret.png" style="transition: 1s opacity; opacity: 0;" />
+      <img alt="ozdoba" class="cosmic_img" src="img/cosmic_lines_1.png" />
       <div class="text" style="transition: 1s opacity; opacity: 0;">
         <div class="title">O mnie</div>
         <div class="content">
@@ -339,12 +340,12 @@
       <div class="triangle"></div>
     </section>
     <section id="blog">
-      <img class="lightbulb" src="img/lightbulb.png" />
+      <img alt="ikona żarówki" class="lightbulb" src="img/lightbulb.png" />
       <div class="title">Blog</div>
       <div class="carousel">
         <div class="articles" style="transition: 1s transform; transform:translateX(100vw);">
           <div class="article">
-            <img src="img/blog_img_1.png" />
+            <img alt="fotografia do artykułu nr 1" src="img/blog_img_1.png" />
             <div class="article_date">23/07/2022</div>
             <div class="article_title">
               Nakaz informowania ws. danych osobowych zarządów spółek
@@ -352,13 +353,13 @@
             <a href="#" class="more">Czytaj więcej</a>
           </div>
           <div class="article">
-            <img src="img/blog_img_1.png" />
+            <img alt="fotografia do artykułu nr 2" src="img/blog_img_1.png" />
             <div class="article_date">22/06/2021</div>
             <div class="article_title">Inny, starszy, mniej ważny nakaz</div>
             <a href="#" class="more">Czytaj więcej</a>
           </div>
           <div class="article">
-            <img src="img/blog_img_1.png" />
+            <img alt="fotografia do artykułu nr 3" src="img/blog_img_1.png" />
             <div class="article_date">21/05/2020</div>
             <div class="article_title">
               Jeszcze inny, jeszcze starszy, jeszcze mniej ważny nakaz
@@ -395,7 +396,7 @@
         </form>
       </div>
       <div class="asap" style="transition: 1s transform; transform: translateX(-100vw);">
-        <img src="img/contact.png" />
+        <img alt="ikona smartfonów" src="img/contact.png" />
         <div class="content">
           <div class="title">Szybki kontakt</div>
           <a href="tel:+48 726 103 160">+48 726 103 160</a>
@@ -405,7 +406,7 @@
     </section>
   </main>
   <footer id="main-footer">
-    <img class="logo" src="img/logo_black.png" />
+    <img alt="logo NewLegal" class="logo" src="img/logo_black.png" />
     <div class="data">
       KRASNE 32A/22, 36-007 KRASNE
       <br />

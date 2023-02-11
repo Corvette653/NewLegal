@@ -53,7 +53,7 @@ async function handleTouchStart(evt) {
 }
 
 async function handleTouchMove(evt) {
-  if (!xDown || !evt.path.includes(blog)) return;
+  if (!xDown || !evt.composedPath().includes(blog)) return;
 
   var xDiff = xDown - evt.touches[0].clientX;
 
