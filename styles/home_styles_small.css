@@ -150,7 +150,7 @@ header .navigation li a.closing {
   float: left;
 }
 #uslugi .col:first-of-type .item:nth-of-type(1) {
-  margin-top: 3.7vw;
+  margin-top: 10vw;
 }
 #uslugi .col:first-of-type .item:nth-of-type(1) img {
   width: 20vw;
@@ -175,7 +175,7 @@ header .navigation li a.closing {
   float: right;
 }
 #uslugi .col:nth-of-type(2) .item:nth-of-type(1) {
-  margin-top: 43vw;
+  margin-top: 50vw;
   width: 100%;
 }
 #uslugi .col:nth-of-type(2) .item:nth-of-type(1) img {
@@ -192,7 +192,7 @@ header .navigation li a.closing {
   width: 39vw;
 }
 #uslugi .col:nth-of-type(2) .item:nth-of-type(4) {
-  margin-bottom: 10vw;
+  margin-bottom: 20vw;
 }
 #uslugi .col:nth-of-type(2) .item:nth-of-type(4) img {
   width: 24.5vw;
@@ -212,7 +212,7 @@ header .navigation li a.closing {
 }
 
 #zaufali_mi .title {
-  margin: 15px 0 15px 20px;
+  margin: 25px 0 25px 20px;
   font-size: 1.4em;
   color: black;
 }
@@ -221,7 +221,7 @@ header .navigation li a.closing {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 #zaufali_mi .content a:nth-of-type(odd) {
   margin-left: 10vw;
@@ -314,11 +314,11 @@ header .navigation li a.closing {
 #blog .title {
   font-size: 1.4em;
   color: white;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-left: 20px;
 }
 #blog .carousel {
-  margin: 40px 20vw 50px 20px;
+  margin: 40px 20vw 60px 20px;
 }
 #blog .carousel .articles {
   display: flex;
@@ -351,7 +351,7 @@ header .navigation li a.closing {
 }
 #blog .carousel .control {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 0;
   right: 0;
   text-align: center;
@@ -386,11 +386,10 @@ header .navigation li a.closing {
 #kontakt .form .title {
   font-size: 1.4em;
   color: white;
-  margin-top: 15px;
+  margin: 40px 0;
 }
 #kontakt .form form {
   display: block;
-  margin: 30px 0 50px;
 }
 #kontakt .form form label {
   font-size: 18px;
@@ -439,7 +438,7 @@ header .navigation li a.closing {
   position: relative;
   height: 52.8960817717vw;
   text-align: center;
-  margin: 0 5vw 50px;
+  margin: 50px 5vw;
 }
 #kontakt .asap img {
   position: absolute;
