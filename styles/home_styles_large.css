@@ -5,19 +5,19 @@ header {
   right: 0;
   z-index: 2;
   background-color: white;
-  padding: 1vw 0 0.8vw 3.1vw;
+  padding: 25px 0 15px 60px;
 }
 header .main-header {
   float: left;
-  height: 3.1vw;
+  height: 60px;
 }
 header .main-header .logo {
   display: inline-block;
-  height: 3.1vw;
+  height: 60px;
 }
 header .main-header .logo img {
   display: inline-block;
-  height: 3.1vw;
+  height: 60px;
 }
 header .main-header .hamburger {
   display: none;
@@ -27,16 +27,16 @@ header .background-video {
 }
 header .navigation {
   float: left;
-  margin-left: 2.6vw;
+  margin: 0 20px;
 }
 header .navigation li {
   display: inline-block;
-  margin: 0 2.6vw;
+  margin: 0 calc((100vw - 1000px) / 12);
 }
 header .navigation li a {
-  display: inline-block;
   color: black;
-  line-height: 3.1vw;
+  display: inline-block;
+  line-height: 60px;
 }
 
 #tytul {
@@ -52,17 +52,17 @@ header .navigation li a {
 }
 #tytul .logo {
   position: absolute;
-  bottom: 20vw;
-  left: 5vw;
-  width: 55.75vw;
+  bottom: 300px;
+  left: 100px;
+  height: 120px;
 }
 #tytul .description {
   position: absolute;
-  bottom: 15vw;
-  left: 5vw;
+  bottom: 200px;
+  left: 100px;
 }
 #tytul .description .title {
-  font-size: 3.3rem;
+  font-size: 2.4em;
   color: #fdfdfd;
   text-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -84,10 +84,13 @@ header .navigation li a {
   background-color: #12485f;
 }
 #jak_dzialamy .content {
-  padding: 6vw 13vw 10vw;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: white;
+  width: 70%;
+  margin: 100px auto 150px;
   text-align: center;
-  color: #ffffff;
-  font-size: 1.6rem;
 }
 #jak_dzialamy .triangle {
   position: absolute;
@@ -96,15 +99,13 @@ header .navigation li a {
   left: 0;
   width: 0;
   height: 0;
-  width: 0;
-  height: 0;
   border-right: 100vw solid black;
   border-top: 4vw solid transparent;
 }
 
 #uslugi {
   background: black;
-  padding: 7.2vw 5.2vw 5.2vw;
+  padding: 50px 0 100px;
 }
 #uslugi .col {
   display: none;
@@ -113,121 +114,116 @@ header .navigation li a {
   display: block;
 }
 #uslugi .tbl div a span {
-  font-size: 1.4rem;
   color: white;
+  display: block;
 }
-#uslugi .tbl div:first-of-type a:first-of-type {
-  width: 15.9vw;
+#uslugi .tbl :not(div:first-of-type, div:nth-of-type(5)) a {
+  width: 50%;
+}
+#uslugi .tbl :not(div:first-of-type, div:nth-of-type(5)) a:first-of-type {
+  float: left;
+}
+#uslugi .tbl :not(div:first-of-type, div:nth-of-type(5)) a:first-of-type span {
+  float: right;
+  margin-right: 20px;
+}
+#uslugi .tbl :not(div:first-of-type, div:nth-of-type(5)) a:first-of-type img {
+  float: right;
+}
+#uslugi .tbl :not(div:first-of-type, div:nth-of-type(5)) a:nth-of-type(2) {
+  float: right;
+}
+#uslugi .tbl :not(div:first-of-type, div:nth-of-type(5)) a:nth-of-type(2) span {
+  float: left;
+  margin-left: 20px;
+}
+#uslugi .tbl :not(div:first-of-type, div:nth-of-type(5)) a:nth-of-type(2) img {
+  float: left;
+}
+#uslugi .tbl div:first-of-type a {
+  width: 150px;
   margin: 0 auto;
 }
-#uslugi .tbl div:first-of-type a:first-of-type span {
-  display: block;
+#uslugi .tbl div:first-of-type a span {
   text-align: center;
-  margin: 0 -15% 2.3vw;
+  margin: 0 -100px 20px;
 }
-#uslugi .tbl div:first-of-type a:first-of-type img {
-  width: 15.9vw;
+#uslugi .tbl div:first-of-type a img {
+  width: 150px;
 }
 #uslugi .tbl div:nth-of-type(2) a:first-of-type {
-  float: left;
-  margin-left: 9.1vw;
+  padding-right: 170px;
 }
 #uslugi .tbl div:nth-of-type(2) a:first-of-type span {
-  line-height: 10.95vw;
-  margin-right: 6.8vw;
-  display: block;
-  float: left;
+  line-height: 100px;
 }
 #uslugi .tbl div:nth-of-type(2) a:first-of-type img {
-  height: 10.95vw;
+  height: 100px;
 }
 #uslugi .tbl div:nth-of-type(2) a:nth-of-type(2) {
-  float: right;
-  margin-right: 11vw;
+  padding-left: 170px;
 }
 #uslugi .tbl div:nth-of-type(2) a:nth-of-type(2) img {
-  height: 10.95vw;
+  height: 100px;
 }
 #uslugi .tbl div:nth-of-type(2) a:nth-of-type(2) span {
-  line-height: 10.95vw;
-  margin-left: 3.65vw;
-  display: block;
-  float: right;
+  line-height: 100px;
 }
 #uslugi .tbl div:nth-of-type(3) {
-  margin: 4.5vw 0;
+  margin: 50px 0;
 }
 #uslugi .tbl div:nth-of-type(3) a:first-of-type {
-  clear: both;
-  float: left;
-  margin-left: -2.4vw;
+  padding-right: 190px;
 }
 #uslugi .tbl div:nth-of-type(3) a:first-of-type span {
-  line-height: 9.6vw;
-  margin-right: 5.6vw;
-  display: block;
-  float: left;
+  line-height: 88px;
 }
 #uslugi .tbl div:nth-of-type(3) a:first-of-type img {
-  height: 9.6vw;
+  height: 88px;
 }
 #uslugi .tbl div:nth-of-type(3) a:nth-of-type(2) {
-  float: right;
-  margin-right: 1.7vw;
-  margin-top: 0.65vw;
+  padding-left: 200px;
+  margin-bottom: 10px;
 }
 #uslugi .tbl div:nth-of-type(3) a:nth-of-type(2) img {
-  height: 8.45vw;
+  height: 78px;
 }
 #uslugi .tbl div:nth-of-type(3) a:nth-of-type(2) span {
-  line-height: 8.45vw;
-  margin-left: 3.1vw;
-  display: block;
-  float: right;
+  line-height: 78px;
 }
 #uslugi .tbl div:nth-of-type(4) a:first-of-type {
-  clear: both;
-  float: left;
-  margin-left: 3vw;
-  margin-top: 1.1vw;
+  padding-right: 130px;
+  margin: 5px 0 20px;
 }
 #uslugi .tbl div:nth-of-type(4) a:first-of-type span {
-  line-height: 2.75vw;
-  margin-right: 6.5vw;
-  display: block;
-  float: left;
+  line-height: 43px;
 }
 #uslugi .tbl div:nth-of-type(4) a:first-of-type img {
-  height: 11vw;
+  height: 86px;
 }
 #uslugi .tbl div:nth-of-type(4) a:nth-of-type(2) {
-  float: right;
-  margin-right: 10.7vw;
+  padding-left: 130px;
 }
 #uslugi .tbl div:nth-of-type(4) a:nth-of-type(2) img {
-  height: 12.1vw;
+  height: 111px;
 }
 #uslugi .tbl div:nth-of-type(4) a:nth-of-type(2) span {
-  line-height: 12.1vw;
-  margin-left: 3.6vw;
-  display: block;
-  float: right;
+  line-height: 111px;
 }
 #uslugi .tbl div:nth-of-type(5) {
-  padding-right: 5vw;
+  width: 100%;
 }
-#uslugi .tbl div:nth-of-type(5) a:first-of-type {
-  clear: both;
-  width: 15.58vw;
+#uslugi .tbl div:nth-of-type(5) a {
+  width: 150px;
   margin: 0 auto;
 }
-#uslugi .tbl div:nth-of-type(5) a:first-of-type span {
-  display: block;
-  text-align: center;
-  margin: 2vw -10% 0;
+#uslugi .tbl div:nth-of-type(5) a img {
+  width: 150px;
+  margin-top: -20px;
 }
-#uslugi .tbl div:nth-of-type(5) a:first-of-type img {
-  width: 15.58vw;
+#uslugi .tbl div:nth-of-type(5) a span {
+  text-align: center;
+  margin: 20px -100px 0;
 }
 #uslugi .triangle {
   position: absolute;
@@ -237,25 +233,23 @@ header .navigation li a {
   width: 0;
   height: 0;
   border-left: 100vw solid white;
-  border-top: 5.2vw solid transparent;
+  border-top: 5.1111111111vw solid transparent;
 }
 
 .bookmarks {
   display: none;
 }
 
-#zaufali_mi {
-  margin-top: -2vw;
-}
 #zaufali_mi .title {
-  margin-left: 3vw;
-  font-size: 2rem;
+  margin-left: 100px;
+  font-size: 1.4em;
+  color: black;
 }
 #zaufali_mi .content {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10vw 0 9vw;
+  margin: 100px 0;
 }
 #zaufali_mi .content a:nth-of-type(1) {
   order: 4;
@@ -299,7 +293,7 @@ header .navigation li a {
   width: 0;
   height: 0;
   border-left: 100vw solid black;
-  border-top: 1vw solid transparent;
+  border-top: 1.1111111111vw solid transparent;
 }
 
 #o_mnie {
@@ -316,15 +310,17 @@ header .navigation li a {
   display: none;
 }
 #o_mnie .text .title {
+  font-size: 1.4em;
   color: white;
-  font-size: 2rem;
   text-align: right;
-  margin: 5.2vw 15.6vw 10.4vw 0;
+  margin: 80px 200px 160px 0;
 }
 #o_mnie .text .content {
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
   color: grey;
-  font-size: 1.6rem;
-  margin: 0 5.2vw 0 45vw;
+  margin: 0 100px 0 50%;
   text-align: justify;
   position: relative;
 }
@@ -335,10 +331,8 @@ header .navigation li a {
   left: 0;
   width: 0;
   height: 0;
-  width: 0;
-  height: 0;
   border-right: 100vw solid #12485f;
-  border-top: 1.5vw solid transparent;
+  border-top: 1.7777777778vw solid transparent;
 }
 
 #blog {
@@ -348,52 +342,54 @@ header .navigation li a {
   display: none;
 }
 #blog .title {
+  font-size: 1.4em;
   color: white;
-  margin: 4vw 0 0 8.5vw;
-  font-size: 2rem;
+  margin: 50px 0 0 100px;
 }
 #blog .carousel {
-  margin: 5.2vw 0 7.8vw 10vw;
+  margin: 60px 0 100px 10vw;
 }
 #blog .carousel .articles {
   display: flex;
   gap: 20vw;
   transition: transform 1s;
 }
+#blog .carousel .articles .article {
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: white;
+}
 #blog .carousel .articles .article img {
   width: 30vw;
 }
 #blog .carousel .articles .article .article_date {
-  font-size: 0.8rem;
-  font-weight: 300;
+  font-size: 0.8em;
+  font-weight: lighter;
   font-style: italic;
-  color: white;
-  margin-top: 1.5vw;
+  margin-top: 15px;
 }
 #blog .carousel .articles .article .article_title {
-  color: white;
-  margin-top: 1vw;
-  margin-bottom: 3vw;
+  margin: 10px 0 30px;
 }
 #blog .carousel .articles .article a.more {
-  font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: lighter;
   font-style: italic;
-  color: #97C7FF;
+  color: #2CC5F4;
 }
 #blog .carousel .article.active {
   display: block;
 }
 #blog .carousel .control {
   position: absolute;
-  bottom: 2.6vw;
+  bottom: 80px;
   left: 0;
   right: 0;
   text-align: center;
 }
 #blog .carousel .control .circle {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   border: 1px solid black;
   border-radius: 50%;
@@ -412,64 +408,73 @@ header .navigation li a {
   width: 0;
   height: 0;
   border-left: 100vw solid black;
-  border-top: 2.5vw solid transparent;
+  border-top: 2.6666666667vw solid transparent;
 }
 
 #kontakt {
   background-color: black;
-  padding-bottom: 10vw;
+  padding: 0 5vw 50px;
 }
 #kontakt .form {
   float: right;
-  color: white;
 }
 #kontakt .form .title {
-  font-size: 1.6rem;
-  margin-top: 6.75vw;
+  font-size: 1.4em;
+  color: white;
+  margin: 80px 0 40px;
 }
 #kontakt .form form {
   display: block;
-  margin: 3vw 3.75vw 0 0;
 }
-#kontakt .form form label {
+#kontakt .form form label.bottom {
   display: block;
-  font-size: 1.4rem;
-  font-weight: 300;
-  margin: 1vw 0 2vw;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: white;
+  font-weight: lighter;
+  margin: 10px 0 30px;
 }
 #kontakt .form form label.top {
   display: none;
 }
 #kontakt .form form input,
 #kontakt .form form textarea {
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: black;
   display: block;
-  line-height: 2.1rem;
-  width: 38.5vw;
+  width: 35vw;
   border: none;
-  padding: 0 0.5vw;
-  font-family: inherit;
-  font-size: inherit;
+  padding: 5px;
 }
 #kontakt .form form input:focus,
 #kontakt .form form textarea:focus {
   outline: none;
 }
+#kontakt .form form textarea {
+  resize: vertical;
+  font-family: inherit;
+  min-height: calc(4.5em + 10px);
+}
 #kontakt .form form button {
   all: unset;
   cursor: pointer;
-  color: #2CC5F4;
   font-style: italic;
-  font-weight: 300;
+  font-weight: lighter;
   float: right;
-  font-size: 1.4rem;
-  margin-top: 2vw;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #2CC5F4;
 }
 #kontakt .asap {
   position: relative;
   height: 26.4480408859vw;
   width: 45vw;
   text-align: center;
-  margin: 10vw 0 0 4vw;
+  margin-top: 150px;
   float: left;
 }
 #kontakt .asap img {
@@ -490,37 +495,38 @@ header .navigation li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#kontakt .asap .content .title {
   color: white;
-  margin: 0;
-  font-size: 1.6rem;
 }
 #kontakt .asap .content a {
-  display: block;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
   color: white;
-  font-size: 1.2rem;
+  display: block;
 }
 #kontakt .asap .content a:first-of-type {
-  margin: 1vw;
+  margin: 10px;
 }
 
 #main-footer {
-  padding: 5vw 0 0 5vw;
+  padding: 30px;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: black;
+  font-size: 0.6em;
 }
 #main-footer .logo {
-  width: 15.6vw;
+  height: 30px;
 }
 #main-footer .data {
-  padding: 1vw 0 0;
-  font-size: 1.1rem;
+  padding-top: 10px;
 }
 #main-footer .privacy {
   display: block;
-  font-size: 1.1rem;
   color: black;
   float: right;
-  margin: 1vw 2.75vw 1vw 0;
+  margin-top: -10px;
 }
 
 * {
@@ -530,8 +536,8 @@ header .navigation li a {
 }
 
 html {
+  font-size: 22px;
   font-family: "Rubik";
-  font-size: 1.14vw;
   scroll-behavior: smooth;
 }
 
@@ -544,7 +550,7 @@ body.no_scroll {
 }
 
 #main-content {
-  margin-top: 4.9vw;
+  margin-top: 100px;
 }
 
 section {

@@ -1,14 +1,21 @@
-var nav = document.querySelector("header .navigation");
+var nav = document.querySelectorAll("header .navigation li a");
 var back = document.querySelector("header .background-video");
 
-function show_menu() {
-  open_elem(nav, 1000);
-  open_elem(back, 1000);
+async function show_menu() {
+  // open_elem(back, 1500);
+  for (elem of nav) {
+    open_elem(elem, 1000);
+    await sleep(100);
+  }
   document.querySelector("header .main-header .hamburger").setAttribute("href", "javascript:hide_menu()");
 }
-function hide_menu() {
-  close_elem(nav, 1000);
-  close_elem(back, 1000);
+
+async function hide_menu() {
+  // close_elem(back, 1500);
+  for (elem of nav) {
+    close_elem(elem, 1000);
+    await sleep(100);
+  }
   document.querySelector("header .main-header .hamburger").setAttribute("href", "javascript:show_menu()");
 }
 

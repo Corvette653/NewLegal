@@ -1,65 +1,17 @@
-@-webkit-keyframes nav_anim {
-  from {
-    margin: calc(0px - calc(100vh - 24vw) / 44 * 5) 0;
-  }
-  to {
-    margin: calc(calc(100vh - 24vw) / 22) 0;
-  }
-}
 @keyframes nav_anim {
   from {
-    margin: calc(0px - calc(100vh - 24vw) / 44 * 5) 0;
+    margin: calc(0px - calc(100vh - 90px) / 44 * 5) 0;
   }
   to {
-    margin: calc(calc(100vh - 24vw) / 22) 0;
-  }
-}
-@-webkit-keyframes nav_anim_2 {
-  from {
-    margin: calc(calc(100vh - 24vw) / 22) 0;
-  }
-  to {
-    margin: calc(0px - calc(100vh - 24vw) / 44 * 5) 0;
+    margin: calc(calc(100vh - 90px) / 22) 0;
   }
 }
 @keyframes nav_anim_2 {
   from {
-    margin: calc(calc(100vh - 24vw) / 22) 0;
+    margin: calc(calc(100vh - 90px) / 22) 0;
   }
   to {
-    margin: calc(0px - calc(100vh - 24vw) / 44 * 5) 0;
-  }
-}
-@-webkit-keyframes back_anim {
-  from {
-    bottom: 0;
-  }
-  to {
-    bottom: calc(0px - calc(100vh - 24vw));
-  }
-}
-@keyframes back_anim {
-  from {
-    bottom: 0;
-  }
-  to {
-    bottom: calc(0px - calc(100vh - 24vw));
-  }
-}
-@-webkit-keyframes back_anim_2 {
-  from {
-    bottom: calc(0px - calc(100vh - 24vw));
-  }
-  to {
-    bottom: 0;
-  }
-}
-@keyframes back_anim_2 {
-  from {
-    bottom: calc(0px - calc(100vh - 24vw));
-  }
-  to {
-    bottom: 0;
+    margin: calc(0px - calc(100vh - 90px) / 44 * 5) 0;
   }
 }
 header {
@@ -76,58 +28,45 @@ header .main-header {
 }
 header .main-header .logo {
   display: inline-block;
-  margin: 8vw 0 8vw 6.5vw;
-  height: 8vw;
+  margin: 30px;
+  height: 30px;
 }
 header .main-header .logo img {
   display: inline-block;
-  width: 48vw;
+  height: 30px;
 }
 header .main-header .hamburger {
   position: absolute;
-  top: 9.8333333333vw;
-  right: 9.5vw;
+  top: 37.5px;
+  right: 37.5px;
 }
 header .main-header .hamburger hr {
-  width: 13vw;
-  height: 0.8666666667vw;
+  width: 45px;
+  height: 3px;
   background-color: black;
   border: none;
 }
 header .main-header .hamburger hr:first-of-type {
-  margin-bottom: 0.8666666667vw;
+  margin-bottom: 3px;
 }
 header .main-header .hamburger hr:last-of-type {
-  margin-top: 0.8666666667vw;
+  margin-top: 3px;
 }
 header .background-video {
   display: inline-block;
   position: absolute;
-  height: calc(100vh - 24vw);
-  margin: 0 calc(50vw - calc(100vh - 24vw) * 700 / 394 / 2);
-}
-header .background-video.closed {
+  height: calc(100vh - 90px);
+  margin: 0 calc(50vw - calc(100vh - 90px) * 700 / 394 / 2);
   bottom: 0;
-}
-header .background-video.opening {
-  -webkit-animation: back_anim 1s ease 0s 1 normal both;
-          animation: back_anim 1s ease 0s 1 normal both;
-}
-header .background-video.opened {
-  bottom: calc(0px - calc(100vh - 24vw));
-}
-header .background-video.closing {
-  -webkit-animation: back_anim_2 1s ease 0s 1 normal both;
-          animation: back_anim_2 1s ease 0s 1 normal both;
 }
 header .navigation {
   position: absolute;
-  top: 24vw;
+  top: 90px;
   right: 0;
   left: 0;
 }
 header .navigation li a {
-  line-height: calc(calc(100vh - 24vw) / 44 * 5);
+  line-height: calc(calc(100vh - 90px) / 44 * 5);
   color: black;
   background-color: white;
   text-align: center;
@@ -135,29 +74,27 @@ header .navigation li a {
   position: relative;
   z-index: 1;
 }
-header .navigation.closed li a {
-  margin: calc(0px - calc(100vh - 24vw) / 44 * 5) 0;
+header .navigation li a.closed {
+  margin: calc(0px - calc(100vh - 90px) / 44 * 5) 0;
 }
-header .navigation.opening li a {
-  -webkit-animation: nav_anim 1s ease 0s 1 normal both;
-          animation: nav_anim 1s ease 0s 1 normal both;
+header .navigation li a.opening {
+  animation: nav_anim 1s ease 0s 1 normal both;
 }
-header .navigation.opened li a {
-  margin: calc(calc(100vh - 24vw) / 22) 0;
+header .navigation li a.opened {
+  margin: calc(calc(100vh - 90px) / 22) 0;
 }
-header .navigation.closing li a {
-  -webkit-animation: nav_anim_2 1s ease 0s 1 normal both;
-          animation: nav_anim_2 1s ease 0s 1 normal both;
+header .navigation li a.closing {
+  animation: nav_anim_2 1s ease 0s 1 normal both;
 }
 
 #tytul {
-  height: calc(100vh - 24vw);
+  height: calc(100vh - 90px);
 }
 #tytul .background-video {
   position: absolute;
   top: 0;
-  height: calc(100vh - 24vw);
-  left: calc(50vw - calc(100vh - 24vw) * 700 / 394 / 2);
+  height: calc(100vh - 90px);
+  left: calc(50vw - calc(100vh - 90px) * 700 / 394 / 2);
   z-index: -1;
 }
 #tytul .logo {
@@ -165,62 +102,28 @@ header .navigation.closing li a {
 }
 #tytul .description {
   position: absolute;
-  bottom: 9vw;
-  left: 8vw;
-  right: 8vw;
+  bottom: 30px;
+  left: 30px;
   color: #fdfdfd;
   text-shadow: 12px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #tytul .description .title {
-  font-size: 1.7rem;
-}
-#tytul .description .content {
-  font-size: 1.2rem;
-  margin-top: 5vw;
+  font-size: 7.6vw;
+  margin-bottom: 20px;
 }
 
 #jak_dzialamy {
   background-color: #75a3b7;
 }
 #jak_dzialamy .content {
-  padding: 15vw 13vw 12vw;
+  padding: 40px 20px;
   text-align: center;
-  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: white;
 }
 
-@-webkit-keyframes bookmark_anim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes bookmark_anim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes bookmark_anim_2 {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes bookmark_anim_2 {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 #uslugi {
   background: black;
 }
@@ -236,7 +139,7 @@ header .navigation.closing li a {
 #uslugi .col span {
   display: block;
   text-align: center;
-  padding-top: 5vw;
+  padding-top: 20px;
   color: white;
   margin: 0 -100%;
 }
@@ -305,78 +208,20 @@ header .navigation.closing li a {
   width: 0;
   height: 0;
   border-left: 100vw solid white;
-  border-top: 3.6vw solid transparent;
+  border-top: 3.5555555556vw solid transparent;
 }
 
-.bookmarks .bookmark {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 3;
-  background-color: #12485f;
-}
-.bookmarks .bookmark .icon {
-  display: block;
-  height: 25vh;
-  margin: 14vw auto 6vw;
-}
-.bookmarks .bookmark .title {
-  color: white;
-  text-align: center;
-}
-.bookmarks .bookmark .content {
-  color: white;
-  padding: 10vw;
-}
-.bookmarks .bookmark a {
-  display: inline-block;
-  width: 11.5vw;
-  height: 13.5vw;
-  position: absolute;
-  bottom: 4.5vw;
-  right: 7.5vw;
-}
-.bookmarks .bookmark a img {
-  width: 11.5vw;
-}
-.bookmarks .bookmark.closed {
-  display: none;
-}
-.bookmarks .bookmark.opening {
-  -webkit-animation: bookmark_anim 500ms ease 0s 1 normal both;
-          animation: bookmark_anim 500ms ease 0s 1 normal both;
-}
-.bookmarks .bookmark.opened {
-  display: block;
-}
-.bookmarks .bookmark.closing {
-  -webkit-animation: bookmark_anim_2 500ms ease 0s 1 normal both;
-          animation: bookmark_anim_2 500ms ease 0s 1 normal both;
-}
-
-#zaufali_mi .triangle {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  width: 0;
-  height: 0;
-  border-right: 100vw solid black;
-  border-top: 2.7vw solid transparent;
-}
 #zaufali_mi .title {
-  margin: 4.5vw 0 4.5vw 7vw;
+  margin: 15px 0 15px 20px;
+  font-size: 1.4em;
+  color: black;
 }
 #zaufali_mi .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4.5vw;
+  margin-bottom: 20px;
 }
 #zaufali_mi .content a:nth-of-type(odd) {
   margin-left: 10vw;
@@ -402,10 +247,49 @@ header .navigation.closing li a {
 #zaufali_mi .content a:nth-of-type(6) img {
   width: 18vw;
 }
+#zaufali_mi .triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 100vw solid black;
+  border-top: 2.6666666667vw solid transparent;
+}
 
 #o_mnie {
   background-color: black;
-  height: 83.0326894502vw;
+  height: 83.5326894502vw;
+}
+#o_mnie .portrait {
+  position: absolute;
+  top: -2.5vw;
+  width: 100vw;
+}
+#o_mnie .cosmic_img {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 60px;
+}
+#o_mnie .text {
+  position: relative;
+  display: block;
+  margin: 0 20px 0 40%;
+}
+#o_mnie .text .title {
+  font-size: 1.4em;
+  color: #3898c4;
+}
+#o_mnie .text .content {
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #3898c4;
+  font-weight: lighter;
+  margin-top: 10px;
+  line-height: normal;
 }
 #o_mnie .triangle {
   position: absolute;
@@ -415,33 +299,72 @@ header .navigation.closing li a {
   width: 0;
   height: 0;
   border-left: 100vw solid #12485f;
-  border-top: 1.8vw solid transparent;
-}
-#o_mnie .portrait {
-  position: absolute;
-  top: -2vw;
-  width: 100vw;
-}
-#o_mnie .cosmic_img {
-  position: absolute;
-  right: 2.5vw;
-  top: 2.5vw;
-  width: 13vw;
-}
-#o_mnie .text {
-  position: relative;
-  display: block;
-  margin: 4vw 12vw 0 50vw;
-  color: #3898c4;
-}
-#o_mnie .text .content {
-  font-size: 0.84rem;
-  font-weight: 300;
-  margin-top: 4.5vw;
+  border-top: 2vw solid transparent;
 }
 
 #blog {
   background-color: #12485f;
+}
+#blog .lightbulb {
+  position: absolute;
+  right: -100px;
+  top: 50px;
+  width: 250px;
+}
+#blog .title {
+  font-size: 1.4em;
+  color: white;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+#blog .carousel {
+  margin: 40px 20vw 50px 20px;
+}
+#blog .carousel .articles {
+  display: flex;
+  gap: 20vw;
+  transition: transform 1s;
+}
+#blog .carousel .articles .article {
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: white;
+}
+#blog .carousel .articles .article img {
+  width: 50vw;
+  margin-right: 30vw;
+}
+#blog .carousel .articles .article .article_date {
+  font-size: 0.8em;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 20px 0 10px;
+}
+#blog .carousel .articles .article a.more {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 0.8em;
+  font-weight: lighter;
+  font-style: italic;
+  color: #97C7FF;
+}
+#blog .carousel .control {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#blog .carousel .control .circle {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+#blog .carousel .control .circle.active {
+  background-color: black;
 }
 #blog .triangle {
   position: absolute;
@@ -450,125 +373,73 @@ header .navigation.closing li a {
   left: 0;
   width: 0;
   height: 0;
-  width: 0;
-  height: 0;
   border-right: 100vw solid black;
-  border-top: 1.2vw solid transparent;
-}
-#blog .lightbulb {
-  position: absolute;
-  right: -22vw;
-  top: 15vw;
-  width: 55vw;
-}
-#blog .title {
-  color: white;
-  margin-top: 5.2vw;
-  margin-left: 8.5vw;
-}
-#blog .carousel {
-  margin: 13.4vw 30vw 13.4vw 8.5vw;
-}
-#blog .carousel .articles {
-  display: flex;
-  gap: 40vw;
-  transition: transform 1s;
-}
-#blog .carousel .articles .article img {
-  width: 50vw;
-  margin-right: 10vw;
-}
-#blog .carousel .articles .article .article_date {
-  font-size: 0.84rem;
-  font-weight: 300;
-  font-style: italic;
-  color: white;
-  margin: 6vw 0 2.4vw;
-}
-#blog .carousel .articles .article .article_title {
-  color: white;
-  line-height: 1.5em;
-  margin-bottom: 4.5vw;
-}
-#blog .carousel .articles .article a.more {
-  font-size: 0.84rem;
-  font-weight: 300;
-  font-style: italic;
-  color: #97C7FF;
-}
-#blog .carousel .article.active {
-  display: block;
-}
-#blog .carousel .control {
-  position: absolute;
-  bottom: 1.5vw;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-#blog .carousel .control .circle {
-  width: 2.5vw;
-  height: 2.5vw;
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 50%;
-}
-#blog .carousel .control .circle.active {
-  background-color: black;
+  border-top: 1.1111111111vw solid transparent;
 }
 
 #kontakt {
   background-color: black;
 }
 #kontakt .form {
-  margin: 0 7.5vw;
+  margin: 0 20px;
 }
 #kontakt .form .title {
+  font-size: 1.4em;
   color: white;
-  margin-top: 12vw;
+  margin-top: 15px;
 }
 #kontakt .form form {
   display: block;
-  margin: 9vw 0 19vw;
+  margin: 30px 0 50px;
 }
 #kontakt .form form label {
-  display: block;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
   color: white;
-  font-size: 0.84rem;
-  font-weight: 300;
-  margin: 5vw 0 2vw;
+  display: block;
+  font-weight: lighter;
+  margin: 20px 0 5px;
 }
 #kontakt .form form label.bottom {
   display: none;
 }
 #kontakt .form form input,
 #kontakt .form form textarea {
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: black;
   display: block;
-  line-height: 2.1rem;
   width: 100%;
   border: none;
-  padding: 0 1.5vw;
-  font-family: inherit;
-  font-size: inherit;
+  padding: 5px;
 }
 #kontakt .form form input:focus,
 #kontakt .form form textarea:focus {
   outline: none;
 }
+#kontakt .form form textarea {
+  resize: vertical;
+  min-height: calc(4.5em + 10px);
+}
 #kontakt .form form button {
   all: unset;
   cursor: pointer;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
   color: #97c7ff;
   font-style: italic;
-  font-weight: 300;
+  font-weight: lighter;
   float: right;
-  margin-top: 6.8vw;
+  margin-top: 20px;
 }
 #kontakt .asap {
   position: relative;
   height: 52.8960817717vw;
   text-align: center;
-  margin: 0 4.5vw 15vw;
+  margin: 0 5vw 50px;
 }
 #kontakt .asap img {
   position: absolute;
@@ -588,32 +459,34 @@ header .navigation.closing li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#kontakt .asap .content .title {
   color: white;
-  margin: 0;
 }
 #kontakt .asap .content a {
   display: block;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
   color: white;
 }
 #kontakt .asap .content a:first-of-type {
-  margin: 4.5vw 0;
+  margin: 15px 0;
 }
 
 #main-footer {
-  padding: 4vw 0 2.5vw 4vw;
+  padding: 20px 0 10px 20px;
+  font-size: 18px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: black;
+  font-size: 0.6em;
 }
 #main-footer .logo {
-  width: 30vw;
+  height: 20px;
 }
 #main-footer .data {
-  padding: 4vw 0 7.5vw;
-  font-size: 0.6rem;
+  padding: 20px 0 20px;
 }
 #main-footer .privacy {
-  display: block;
-  font-size: 0.6rem;
   color: black;
 }
 
@@ -625,7 +498,7 @@ header .navigation.closing li a {
 
 html {
   font-family: "Rubik";
-  font-size: 3.7vw;
+  font-size: 22px;
 }
 
 a {
@@ -637,7 +510,7 @@ body.no_scroll {
 }
 
 #main-content {
-  margin-top: 24vw;
+  margin-top: 90px;
 }
 
 section {
