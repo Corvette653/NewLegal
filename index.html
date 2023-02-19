@@ -3,9 +3,20 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NewLegal</title>
   <meta name="description" content="Kancelaria adwokacka NewLegal, Paweł Buczek, Rzeszów">
+  <title>NewLegal</title>
+
+  <link rel="icon" href="/img/favicons/favicon_black_16.ico" sizes="16x16" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/img/favicons/favicon_black_32.ico" sizes="32x32" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/img/favicons/favicon_black_96.ico" sizes="96x96" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/img/favicons/favicon_black_180.ico" sizes="180x180" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/img/favicons/favicon_white_16.ico" sizes="16x16" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/img/favicons/favicon_white_32.ico" sizes="32x32" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/img/favicons/favicon_white_96.ico" sizes="96x96" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/img/favicons/favicon_white_180.ico" sizes="180x180" media="(prefers-color-scheme: dark)">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap" />
@@ -23,9 +34,14 @@
 <body>
   <header>
     <div class="main-header">
-      <a class="logo" href="#" onclick="scroll_to(event, 'html', 'start', 'start', 'smooth')"><img alt="logo NewLegal"
-          src="img/logo_black.png" /></a>
-      <a href="javascript:show_menu()" class="hamburger">
+      <a class="logo" href="#" onclick="scroll_to(event, 'html', 'start', 'start', 'smooth')">
+        <picture>
+          <source media="(min-width:950px)" srcset="img/loga/logo_header_desktop_black.webp" />
+          <source media="(max-width:949px)" srcset="img/loga/logo_header_mobile_black.webp" />
+          <img alt="logo NewLegal" src="img/loga/logo_header_black.png" />
+        </picture>
+      </a>
+      <a href="javascript:header.show()" class="hamburger">
         <hr />
         <hr />
         <hr />
@@ -44,7 +60,7 @@
         <li><a href="#blog" onclick="scroll_to(event, '#blog', 'center', 'center')" class="closed">Blog</a></li>
         <li><a href="#kontakt" onclick="scroll_to(event, '#kontakt', 'start', 'center')" class="closed">Kontakt</a></li>
       </ul>
-      <video autoplay muted loop class="background-video">
+      <video autoplay loop muted playsinline class="background-video">
         <source src="img/stars.mp4" type="video/mp4" />
       </video>
     </div>
@@ -52,7 +68,7 @@
 
   <main id="main-content">
     <section id="tytul">
-      <video autoplay muted loop class="background-video">
+      <video autoplay loop muted playsinline class="background-video">
         <source src="img/stars.mp4" type="video/mp4" />
       </video>
       <!-- <a href="javascript:some_function()" class="disabled">
@@ -64,7 +80,10 @@
         <a href="javascript:some_function()" class="contrast">
           <img src="img/contrast.png" />
         </a> -->
-      <img class="logo" alt="logo NewLegal" src="img/logo_white.png" />
+      <picture>
+        <source srcset="img/loga/logo_white.webp" />
+        <img class="logo" alt="logo NewLegal" src="img/loga/logo_white.png" />
+      </picture>
       <div class="description">
         <div class="title">Nowoczesna Kancelaria</div>
         <div class="content">Obsługa prawna<br />na miarę XXI wieku</div>
@@ -72,6 +91,7 @@
       <div class="triangle"></div>
     </section>
     <section id="jak_dzialamy">
+      <div class="title" style="transition: 1s opacity; opacity: 0;">Jak działamy</div>
       <div class="content" style="transition: 1s opacity; opacity: 0;">
         Kancelaria Adwokacka NewLegal świadczy usługi na rzecz podmiotów prywatnych, publicznych, a&nbsp;także klientów
         indywidualnych. Głównym obszarem działalności jest dostosowanie funkcjonowania jednostek organizacyjnych do
@@ -84,28 +104,41 @@
       <div class="triangle"></div>
     </section>
     <section id="uslugi">
+      <div class="title">Usługi</div>
       <div class="col">
         <a disabled-href="javascript:show_bookmark(1)" class="item"
           style="transition: 1s transform; transform: translateX(-50vw);">
-          <img alt="ikona dokumentu z lupą" src="img/wektory_1.png" />
+          <picture>
+            <source srcset="img/uslugi/wektory_1.webp" />
+            <img alt="ikona dokumentu z lupą" src="img/uslugi/wektory_1.png" />
+          </picture>
           <span>Umowy</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(3)" class="item"
           style="transition: 1s transform; transform: translateX(-50vw);">
-          <img alt="ikona kłódki" src="img/wektory_3.png" />
+          <picture>
+            <source srcset="img/uslugi/wektory_3.webp" />
+            <img alt="ikona kłódki" src="img/uslugi/wektory_3.png" />
+          </picture>
           <span>RODO</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(5)" class="item"
           style="transition: 1s transform; transform: translateX(-50vw);">
-          <img alt="ikona biretu" src="img/wektory_5.png" />
+          <picture>
+            <source srcset="img/uslugi/wektory_5.webp" />
+            <img alt="ikona biretu" src="img/uslugi/wektory_5.png" />
+          </picture>
           <span>Szkolenia</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(7)" class="item"
           style="transition: 1s transform; transform: translateX(-50vw);">
-          <img alt="ikona żarówki" src="img/wektory_7.png" />
+          <picture>
+            <source srcset="img/uslugi/wektory_7.webp" />
+            <img alt="ikona żarówki" src="img/uslugi/wektory_7.png" />
+          </picture>
           <span>Prawo IT</span>
         </a>
         <div style="clear: both; height: 0"></div>
@@ -113,25 +146,37 @@
       <div class="col">
         <a disabled-href="javascript:show_bookmark(2)" class="item"
           style="transition: 1s transform; transform: translateX(50vw);">
-          <img alt="ikona uściśniętych dłoni" src="img/wektory_2.png" />
+          <picture>
+            <source srcset="img/uslugi/wektory_2.webp" />
+            <img alt="ikona uściśniętych dłoni" src="img/uslugi/wektory_2.png" />
+          </picture>
           <span>Kompleksowa<br />obsługa firm</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(4)" class="item"
           style="transition: 1s transform; transform: translateX(50vw);">
-          <img alt="ikona wózka" src="img/wektory_4.png" />
+          <picture>
+            <source srcset="img/uslugi/wektory_4.webp" />
+            <img alt="ikona wózka" src="img/uslugi/wektory_4.png" />
+          </picture>
           <span>E-commerce</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(6)" class="item"
           style="transition: 1s transform; transform: translateX(50vw);">
-          <img alt="ikona młotka sędziowskiego" src="img/wektory_6.png" />
+          <picture>
+            <source srcset="img/uslugi/wektory_6.webp" />
+            <img alt="ikona młotka sędziowskiego" src="img/uslugi/wektory_6.webp" />
+          </picture>
           <span>Postępowania sądowe</span>
         </a>
         <div style="clear: both; height: 0"></div>
         <a disabled-href="javascript:show_bookmark(8)" class="item"
           style="transition: 1s transform; transform: translateX(50vw);">
-          <img alt="ikona głowy" src="img/wektory_8.png" />
+          <picture>
+            <source srcset="img/uslugi/wektory_8.webp" />
+            <img alt="ikona głowy" src="img/uslugi/wektory_8.png" />
+          </picture>
           <span>Obsługa klienta<br />indywidualnego</span>
         </a>
         <div style="clear: both; height: 0"></div>
@@ -141,19 +186,28 @@
           <a disabled-href="javascript:show_bookmark(2)" class="item"
             style="transition: 1s transform; transform: translateY(-50vw);">
             <span>Kompleksowa obsługa firm</span>
-            <img alt="ikona uściśniętych dłoni" src="img/wektory_2.png" />
+            <picture>
+              <source srcset="img/uslugi/wektory_2.webp" />
+              <img alt="ikona uściśniętych dłoni" src="img/uslugi/wektory_2.png" />
+            </picture>
           </a>
           <div style="clear: both"></div>
         </div>
         <div>
           <a disabled-href="javascript:show_bookmark(1)" class="item"
             style="transition: 1s transform; transform: translateX(-50vw);">
-            <img alt="ikona dokumentu z lupą" src="img/wektory_1.png" />
+            <picture>
+              <source srcset="img/uslugi/wektory_1.webp" />
+              <img alt="ikona dokumentu z lupą" src="img/uslugi/wektory_1.png" />
+            </picture>
             <span>Umowy</span>
           </a>
           <a disabled-href="javascript:show_bookmark(3)" class="item"
             style="transition: 1s transform; transform: translateX(50vw);">
-            <img alt="ikona kłódki" src="img/wektory_3.png" />
+            <picture>
+              <source srcset="img/uslugi/wektory_3.webp" />
+              <img alt="ikona kłódki" src="img/uslugi/wektory_3.png" />
+            </picture>
             <span>RODO</span>
           </a>
           <div style="clear: both"></div>
@@ -161,12 +215,18 @@
         <div>
           <a disabled-href="javascript:show_bookmark(4)" class="item"
             style="transition: 1s transform; transform: translateX(-50vw);">
-            <img alt="ikona wózka" src="img/wektory_4.png" />
+            <picture>
+              <source srcset="img/uslugi/wektory_4.webp" />
+              <img alt="ikona wózka" src="img/uslugi/wektory_4.png" />
+            </picture>
             <span>E-commerce</span>
           </a>
           <a disabled-href="javascript:show_bookmark(5)" class="item"
             style="transition: 1s transform; transform: translateX(50vw);">
-            <img alt="ikona biretu" src="img/wektory_5.png" />
+            <picture>
+              <source srcset="img/uslugi/wektory_5.webp" />
+              <img alt="ikona biretu" src="img/uslugi/wektory_5.png" />
+            </picture>
             <span>Szkolenia</span>
           </a>
           <div style="clear: both"></div>
@@ -174,12 +234,18 @@
         <div>
           <a disabled-href="javascript:show_bookmark(8)" class="item"
             style="transition: 1s transform; transform: translateX(-50vw);">
-            <img alt="ikona głowy" src="img/wektory_8.png" />
+            <picture>
+              <source srcset="img/uslugi/wektory_8.webp" />
+              <img alt="ikona głowy" src="img/uslugi/wektory_8.png" />
+            </picture>
             <span>Obsługa klienta<br />indywidualnego</span>
           </a>
           <a disabled-href="javascript:show_bookmark(7)" class="item"
             style="transition: 1s transform; transform: translateX(50vw);">
-            <img alt="ikona żarówki" src="img/wektory_7.png" />
+            <picture>
+              <source srcset="img/uslugi/wektory_7.webp" />
+              <img alt="ikona żarówki" src="img/uslugi/wektory_7.png" />
+            </picture>
             <span>Prawo IT</span>
           </a>
           <div style="clear: both"></div>
@@ -187,7 +253,10 @@
         <div>
           <a disabled-href="javascript:show_bookmark(6)" class="item"
             style="transition: 1s transform; transform: translateY(50vw);">
-            <img alt="ikona młotka sędziowskiego" src="img/wektory_6.png" />
+            <picture>
+              <source srcset="img/uslugi/wektory_6.webp" />
+              <img alt="ikona młotka sędziowskiego" src="img/uslugi/wektory_6.webp" />
+            </picture>
             <span>Postępowania sądowe</span>
           </a>
           <div style="clear: both"></div>
@@ -197,9 +266,9 @@
       <div style="clear: both; height: 0"></div>
       <div class="triangle"></div>
     </section>
-    <!-- <div class="bookmarks">
+    <!-- <div  class="bookmarks">
       <div class="bookmark closed">
-        <img class="icon" src="img/wektory_1.png" />
+        <img class="icon" src="img/uslugi/wektory_1.png" />
         <div class="title">Umowy</div>
         <div class="content">
           Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -212,7 +281,7 @@
         <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
       </div>
       <div class="bookmark closed">
-        <img class="icon" src="img/wektory_2.png" />
+        <img class="icon" src="img/uslugi/wektory_2.png" />
         <div class="title">Kompleksowa obsługa firm</div>
         <div class="content">
           Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -225,7 +294,7 @@
         <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
       </div>
       <div class="bookmark closed">
-        <img class="icon" src="img/wektory_3.png" />
+        <img class="icon" src="img/uslugi/wektory_3.png" />
         <div class="title">RODO</div>
         <div class="content">
           Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -238,7 +307,7 @@
         <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
       </div>
       <div class="bookmark closed">
-        <img class="icon" src="img/wektory_4.png" />
+        <img class="icon" src="img/uslugi/wektory_4.png" />
         <div class="title">E-commerce</div>
         <div class="content">
           Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -251,7 +320,7 @@
         <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
       </div>
       <div class="bookmark closed">
-        <img class="icon" src="img/wektory_5.png" />
+        <img class="icon" src="img/uslugi/wektory_5.png" />
         <div class="title">Szkolenia</div>
         <div class="content">
           Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -264,7 +333,7 @@
         <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
       </div>
       <div class="bookmark closed">
-        <img class="icon" src="img/wektory_6.png" />
+        <img class="icon" src="img/uslugi/wektory_6.png" />
         <div class="title">Postępowania sądowe</div>
         <div class="content">
           Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -277,7 +346,7 @@
         <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
       </div>
       <div class="bookmark closed">
-        <img class="icon" src="img/wektory_7.png" />
+        <img class="icon" src="img/uslugi/wektory_7.png" />
         <div class="title">Prawo IT</div>
         <div class="content">
           Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -290,7 +359,7 @@
         <a href="javascript:close_bookmark()"><img src="img/x.png" /></a>
       </div>
       <div class="bookmark closed">
-        <img class="icon" src="img/wektory_8.png" />
+        <img class="icon" src="img/uslugi/wektory_8.png" />
         <div class="title">Obsługa klienta indywidualnego</div>
         <div class="content">
           Zajmujemy się szeroko zakrojoną obsługą firm, począwszy od tworzenia
@@ -305,26 +374,62 @@
     </div> -->
     <section id="zaufali_mi">
       <div class="title">Wybrani klienci</div>
-      <div class="content" style="transition: 1s transform; transform: translateX(100vw);">
-        <a href="https://itsmsoftware.pl"><img alt="logo firmy ITSM Software" src="img/itsm.png" /></a>
-        <a href="https://www.astra.com.pl"><img alt="logo firmy Astra" src="img/astra.png" /></a>
-        <a href="https://opgk.rzeszow.pl"><img alt="logo firmy OPGK Rzeszów" src="img/opgk.png" /></a>
-        <a href="#"><img alt="logo firmy GIW" src="img/giw.png" /></a>
-        <!-- <a href="https://salesbook.com"><img src="img/salesbook.png" /></a> -->
-        <a href="#">
-          <picture>
-            <source media="(max-width:767px)" srcset="img/salesbook_small.png" />
-            <source media="(min-width:992px)" srcset="img/salesbook_large.png" />
-            <img alt="logo firmy Salesbook" src="img/salesbook_large.png" />
-          </picture>
-        </a>
-        <a href="#"><img alt="logo firmy Dare" src="img/dare.png" /></a>
+      <div class="carousel" style="transition: 1s transform; transform: translateX(100vw);">
+        <div class="slide">
+          <a href="https://www.astra.com.pl">
+            <picture>
+              <!-- <source srcset="" /> -->
+              <img alt="logo firmy Astra" src="img/klienci/astra.png" />
+            </picture>
+          </a>
+          <a href="https://www.salesbook.com/pl">
+            <picture>
+              <source srcset="img/klienci/salesbook_desktop.webp" />
+              <img alt="logo firmy salesbook" src="img/klienci/salesbook_desktop.png" />
+            </picture>
+          </a>
+          <a href="https://www.opgksoftware.com/pl">
+            <picture>
+              <source srcset="img/klienci/opgk_desktop.webp" />
+              <img alt="logo firmy opgk" src="img/klienci/opgk_desktop.png" />
+            </picture>
+          </a>
+        </div>
+        <div class="slide" style="left: 100vw;">
+          <a href="https://www.inspektorat_weterynarii.pl"> <!--  todo -->
+            <picture>
+              <!-- <source srcset="" /> -->
+              <img alt="logo powiatowego inspektoratu weterynarii" src="img/klienci/giw.png" />
+            </picture>
+          </a>
+          <a href="https://www.dare.pl"><!--  todo -->
+            <picture>
+              <!-- <source srcset="" /> -->
+              <img alt="logo firmy dare" src="img/klienci/dare.png" />
+            </picture>
+          </a>
+          <a href="https://www.itsmsoftware.pl">
+            <picture>
+              <source srcset="img/klienci/itsm_desktop.webp" />
+              <img alt="logo firmy itsm" src="img/klienci/itsm_desktop.png" />
+            </picture>
+          </a>
+        </div>
+      </div>
+      <div class="grid" style="transition: 1s transform; transform: translateX(100vw);">
+        <a href="https://itsmsoftware.pl"><img alt="logo firmy ITSM Software" src="img/klienci/itsm.png" /></a>
+        <a href="https://www.astra.com.pl"><img alt="logo firmy Astra" src="img/klienci/astra.png" /></a>
+        <a href="https://opgk.rzeszow.pl"><img alt="logo firmy OPGK Rzeszów" src="img/klienci/opgk_2.png" /></a>
+        <a href="https://inspektorat_weterynarii.pl"><img alt="logo firmy GIW" src="img/klienci/giw.png" /></a><!--  todo -->
+        <a href="https://salesbook.com/pl"><img src="img/klienci/salesbook_small.png" /></a>
+        <a href="https://www.dare.pl"><img alt="logo firmy Dare" src="img/klienci/dare.png" /></a><!--  todo -->
       </div>
       <div style="clear: both; height: 0"></div>
       <div class="triangle"></div>
     </section>
     <section id="o_mnie">
-      <img alt="portret właściciela kancelarii NewLegal" class="portrait" src="img/portret.png" style="transition: 1s opacity; opacity: 0;" />
+      <img alt="portret właściciela kancelarii NewLegal" class="portrait" src="img/portret.png"
+        style="transition: 1s opacity; opacity: 0;" />
       <img alt="ozdoba" class="cosmic_img" src="img/cosmic_lines_1.png" />
       <div class="text" style="transition: 1s opacity; opacity: 0;">
         <div class="title">O mnie</div>
@@ -337,7 +442,6 @@
           renomowanych lubelskich kancelariach.
         </div>
       </div>
-      <div class="triangle"></div>
     </section>
     <section id="blog">
       <img alt="ikona żarówki" class="lightbulb" src="img/lightbulb.png" />
@@ -368,9 +472,9 @@
           </div>
         </div>
         <div class="control">
-          <a href="javascript:set_active_slide(0)" class="circle active"></a>
-          <a href="javascript:set_active_slide(1)" class="circle"></a>
-          <a href="javascript:set_active_slide(2)" class="circle"></a>
+          <a href="javascript:blog_carousel.set_active_slide(0)" class="circle active"></a>
+          <a href="javascript:blog_carousel.set_active_slide(1)" class="circle"></a>
+          <a href="javascript:blog_carousel.set_active_slide(2)" class="circle"></a>
         </div>
       </div>
       <div class="triangle"></div>
@@ -396,7 +500,11 @@
         </form>
       </div>
       <div class="asap" style="transition: 1s transform; transform: translateX(-100vw);">
-        <img alt="ikona smartfonów" src="img/contact.png" />
+        <picture>
+          <source media="(min-width:950px)" srcset="img/contact_large.webp" />
+          <source media="(max-width:949px)" srcset="img/contact_small.webp" />
+          <img alt="ikona smartfonów" src="img/contact.png" />
+        </picture>
         <div class="content">
           <div class="title">Szybki kontakt</div>
           <a href="tel:+48 726 103 160">+48 726 103 160</a>
@@ -405,22 +513,44 @@
       </div>
     </section>
   </main>
+
   <footer id="main-footer">
-    <img alt="logo NewLegal" class="logo" src="img/logo_black.png" />
+    <picture>
+      <source media="(min-width:950px)" srcset="img/loga/logo_footer_desktop_black.webp" />
+      <source media="(max-width:949px)" srcset="img/loga/logo_footer_mobile_black.webp" />
+      <img alt="logo NewLegal" class="logo" src="img/loga/logo_footer_black.png" />
+    </picture>
     <div class="data">
-      KRASNE 32A/22, 36-007 KRASNE
+      GEODETÓW 1/4A, 35-328 RZESZÓW
       <br />
       NIP 5170421631
       <br />
       REGON 520727679
       <br />
-      NR KONTA BANKOWEGO 63 1000 0009 9997 5674 7861
+      NR KONTA 40 1090 2590 0000 0001 4935 0565
     </div>
     <a class="privacy" href="#">Polityka prywatności i cookies</a>
   </footer>
-  <script src="scripts/js_framework.js"></script>
+
+  <div id="cookies">
+    <img alt="ikona ciasteczek" src="img/cookies.png" />
+    <div class="title">Ciasteczka</div>
+    <div class="text">Cenimy sobie Twoją prywatność. Nasza strona zbiera dane, tzw.&nbsp;ciasteczka.<br />Czy
+      wyrażasz zgodę ?
+    </div>
+    <label class="checkbox">
+      <span>Nie</span>
+      <input type="checkbox" onchange="cookies.close_declaration();">
+      <div class="slider">
+        <div class="knob"></div>
+      </div>
+      <span>Tak</span>
+    </label>
+
+  </div>
+
+  <script src="scripts/utils_scripts.js"></script>
   <script src="scripts/header_scripts.js"></script>
-  <script src="scripts/custom_scripts.js"></script>
   <script src="scripts/carousel_scripts.js"></script>
 </body>
 
