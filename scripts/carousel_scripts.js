@@ -42,16 +42,27 @@ var blog_carousel = {
   yStart: null,
 
   handleTouchStart: async function (e) {
-    if (e.touches.length > 1) { return; }
-    blog_carousel.xStart = e.touches[0].clientX;
-    blog_carousel.yStart = e.touches[0].clientY;
+    try { // mobile
+      if (e.touches.length > 1) { return; }
+      blog_carousel.xStart = e.touches[0].clientX;
+      blog_carousel.yStart = e.touches[0].clientY;
+    } catch { // desktop
+      blog_carousel.xStart = e.clientX;
+      blog_carousel.yStart = e.clientY;
+    }
   },
 
   handleTouchEnd: async function (e) {
     if (!blog_carousel.xStart || !e.composedPath().includes(blog)) return;
 
-    var xDiff = blog_carousel.xStart - e.changedTouches[0].clientX;
-    var yDiff = blog_carousel.yStart - e.changedTouches[0].clientY;
+
+    try { // mobile
+      var xDiff = blog_carousel.xStart - e.changedTouches[0].clientX;
+      var yDiff = blog_carousel.yStart - e.changedTouches[0].clientY;
+    } catch { // desktop
+      var xDiff = blog_carousel.xStart - e.clientX;
+      var yDiff = blog_carousel.yStart - e.clientY;
+    }
 
     if (2 * Math.abs(yDiff) > Math.abs(xDiff)) return; // non-horizontal slide
 

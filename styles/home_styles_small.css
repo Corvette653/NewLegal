@@ -30,6 +30,10 @@
     margin: calc(0px - calc(90vh - 90px + 1px) / 44 * 5) 0;
   }
 }
+.header-top-line {
+  display: none;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -112,6 +116,10 @@ header .navigation li:last-of-type a.closing {
   animation: last_link_anim_2 2s ease 0s 1 normal both;
 }
 
+.header-subtitle, .header-bottom-line {
+  display: none;
+}
+
 #tytul {
   height: calc(100vh - 90px + 1px);
 }
@@ -169,10 +177,6 @@ header .navigation li:last-of-type a.closing {
   float: left;
   position: relative;
 }
-#uslugi .col .item {
-  width: 50%;
-  margin: 15vw 0;
-}
 #uslugi .col span {
   display: block;
   text-align: center;
@@ -181,61 +185,69 @@ header .navigation li:last-of-type a.closing {
   line-height: 1.5em;
   letter-spacing: 0.5px;
   color: white;
-  margin: 0 -100%;
-}
-#uslugi .col:nth-of-type(2) {
-  padding-left: 12vw;
 }
 #uslugi .col:nth-of-type(2) .item {
   float: left;
 }
 #uslugi .col:nth-of-type(2) .item:nth-of-type(1) {
-  margin-top: 10vw;
+  margin: 10vw 15vw 0;
 }
 #uslugi .col:nth-of-type(2) .item:nth-of-type(1) img {
   width: 20vw;
 }
+#uslugi .col:nth-of-type(2) .item:nth-of-type(2) {
+  margin: 25vw 10vw 0;
+}
 #uslugi .col:nth-of-type(2) .item:nth-of-type(2) img {
   width: 30vw;
 }
+#uslugi .col:nth-of-type(2) .item:nth-of-type(2) span {
+  margin-right: 8vw;
+}
 #uslugi .col:nth-of-type(2) .item:nth-of-type(3) {
-  width: 100%;
+  margin: 20vw 5.5vw 0;
 }
 #uslugi .col:nth-of-type(2) .item:nth-of-type(3) img {
   width: 39vw;
 }
-#uslugi .col:nth-of-type(2) .item:nth-of-type(4) img {
-  margin-left: -6vw;
-  width: 27vw;
+#uslugi .col:nth-of-type(2) .item:nth-of-type(4) {
+  margin: 20vw 12vw 0;
 }
-#uslugi .col:nth-of-type(3) {
-  padding-right: 12vw;
+#uslugi .col:nth-of-type(2) .item:nth-of-type(4) img {
+  width: 27vw;
 }
 #uslugi .col:nth-of-type(3) .item {
   float: right;
 }
 #uslugi .col:nth-of-type(3) .item:nth-of-type(1) {
-  margin-top: 50vw;
-  width: 100%;
+  margin: 50vw 6.25vw 0;
 }
 #uslugi .col:nth-of-type(3) .item:nth-of-type(1) img {
   width: 37.5vw;
 }
+#uslugi .col:nth-of-type(3) .item:nth-of-type(2) {
+  margin: 25vw 13vw 0;
+}
 #uslugi .col:nth-of-type(3) .item:nth-of-type(2) img {
-  margin-left: -3vw;
   width: 24vw;
 }
+#uslugi .col:nth-of-type(3) .item:nth-of-type(2) span {
+  margin: 0 calc(12vw - 57px);
+}
 #uslugi .col:nth-of-type(3) .item:nth-of-type(3) {
-  width: 100%;
+  margin: 25vw 5.5vw 0;
 }
 #uslugi .col:nth-of-type(3) .item:nth-of-type(3) img {
   width: 39vw;
 }
 #uslugi .col:nth-of-type(3) .item:nth-of-type(4) {
-  margin-bottom: 20vw;
+  margin: 20vw 13vw;
 }
 #uslugi .col:nth-of-type(3) .item:nth-of-type(4) img {
   width: 24.5vw;
+}
+#uslugi .col:nth-of-type(3) .item:nth-of-type(4) span {
+  margin: 0 calc(12vw - 70px);
 }
 #uslugi .tbl {
   display: none;
@@ -323,7 +335,7 @@ header .navigation li:last-of-type a.closing {
 
 #o_mnie {
   background-color: black;
-  height: calc(109.2124814264vw + 50px);
+  height: 118.3723284589vw;
 }
 #o_mnie .portrait {
   position: absolute;
@@ -340,13 +352,13 @@ header .navigation li:last-of-type a.closing {
 #o_mnie .text {
   position: relative;
   display: block;
-  margin: 0 10px 0 50%;
+  margin: 0 10px 0 46%;
 }
 #o_mnie .text .title {
   font-size: 1.4em;
   color: #3898c4;
   text-align: right;
-  margin: 10px;
+  margin: 25px 10px;
 }
 #o_mnie .text .content {
   color: #3898c4;
@@ -371,7 +383,7 @@ header .navigation li:last-of-type a.closing {
   margin-left: 20px;
 }
 #blog .carousel {
-  margin: 40px 20vw 60px 20px;
+  margin: 40px 20vw 100px 20px;
 }
 #blog .carousel .articles {
   display: flex;
@@ -410,8 +422,8 @@ header .navigation li:last-of-type a.closing {
   text-align: center;
 }
 #blog .carousel .control .circle {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   display: inline-block;
   border: 1px solid black;
   border-radius: 50%;
@@ -434,6 +446,7 @@ header .navigation li:last-of-type a.closing {
   background-color: black;
 }
 #kontakt .form {
+  transition: opacity 0.5s;
   margin: 0 20px;
 }
 #kontakt .form .title {
@@ -486,6 +499,21 @@ header .navigation li:last-of-type a.closing {
   font-weight: lighter;
   float: right;
   margin-top: 20px;
+}
+#kontakt .acknowledgment {
+  display: none;
+  opacity: 0;
+  margin: 120px 0 100px;
+  transition: opacity 0.5s;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+}
+#kontakt .acknowledgment .title {
+  font-size: 1.4em;
+  color: white;
+  margin-bottom: 10px;
 }
 #kontakt .asap {
   position: relative;
@@ -628,12 +656,12 @@ a {
   text-decoration: none;
 }
 
-body.no_scroll {
-  overflow-y: hidden;
-}
-
 #main-content {
   margin-top: 90px;
+}
+
+body.no_scroll {
+  overflow-y: hidden;
 }
 
 section {

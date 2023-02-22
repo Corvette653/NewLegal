@@ -32,13 +32,14 @@
 </head>
 
 <body>
+  <hr class="header-top-line" />
   <header>
     <div class="main-header">
-      <a class="logo" href="#" onclick="scroll_to(event, 'html', 'start', 'start', 'smooth')">
+      <a class="logo" href="#" onclick="header.scroll_to(event, 'html', 'start', 'start', 'smooth')">
         <picture>
           <source media="(min-width:950px)" srcset="img/loga/logo_header_desktop_black.webp" />
           <source media="(max-width:949px)" srcset="img/loga/logo_header_mobile_black.webp" />
-          <img alt="logo NewLegal" src="img/loga/logo_header_black.png" />
+          <img alt="logo NewLegal" src="img/loga/logo_header_desktop_black.png" />
         </picture>
       </a>
       <a href="javascript:header.show()" class="hamburger">
@@ -50,21 +51,36 @@
 
     <div class="navigation">
       <ul>
-        <li><a href="#jak_dzialamy" onclick="scroll_to(event, '#jak_dzialamy', 'start', 'center')" class="closed">Jak
+        <li><a href="#jak_dzialamy" onclick="header.scroll_to(event, '#jak_dzialamy', 'start', 'center')"
+            class="closed">Jak
             działamy</a></li>
-        <li><a href="#uslugi" onclick="scroll_to(event, '#uslugi', 'start', 'center')" class="closed">Usługi</a></li>
-        <li><a href="#zaufali_mi" onclick="scroll_to(event, '#zaufali_mi', 'center', 'center')" class="closed">Zaufali
+        <li><a href="#uslugi" onclick="header.scroll_to(event, '#uslugi', 'start', 'center')" class="closed">Usługi</a>
+        </li>
+        <li><a href="#zaufali_mi" onclick="header.scroll_to(event, '#zaufali_mi', 'center', 'center')"
+            class="closed">Zaufali
             mi</a>
         </li>
-        <li><a href="#o_mnie" onclick="scroll_to(event, '#o_mnie', 'center', 'center')" class="closed">O mnie</a></li>
-        <li><a href="#blog" onclick="scroll_to(event, '#blog', 'center', 'center')" class="closed">Blog</a></li>
-        <li><a href="#kontakt" onclick="scroll_to(event, '#kontakt', 'start', 'center')" class="closed">Kontakt</a></li>
+        <li><a href="#o_mnie" onclick="header.scroll_to(event, '#o_mnie', 'center', 'center')" class="closed">O mnie</a>
+        </li>
+        <li><a href="#blog" onclick="header.scroll_to(event, '#blog', 'center', 'center')" class="closed">Blog</a></li>
+        <li><a href="#kontakt" onclick="header.scroll_to(event, '#kontakt', 'start', 'center')"
+            class="closed">Kontakt</a></li>
       </ul>
       <video autoplay loop muted playsinline class="background-video">
         <source src="img/stars.mp4" type="video/mp4" />
       </video>
     </div>
+    <div style="clear: both; height: 0px;"></div>
   </header>
+  <div class="header-subtitle">
+    <a class="logo" href="#" onclick="header.scroll_to(event, 'html', 'start', 'start', 'smooth')">
+      <picture>
+        <source media="(min-width:950px)" srcset="img/loga/logo_header_desktop_grey.webp" />
+        <img alt="logo NewLegal" src="img/loga/logo_header_desktop_grey.png" />
+      </picture>
+    </a>
+  </div>
+  <hr class="header-bottom-line" />
 
   <main id="main-content">
     <section id="tytul">
@@ -85,7 +101,7 @@
         <img class="logo" alt="logo NewLegal" src="img/loga/logo_white.png" />
       </picture>
       <div class="description">
-        <div class="title">Nowoczesna Kancelaria</div>
+        <div class="title">Be ready for new</div>
         <div class="content">Obsługa prawna<br />na miarę XXI wieku</div>
       </div>
       <div class="triangle"></div>
@@ -177,7 +193,7 @@
             <source srcset="img/uslugi/wektory_8.webp" />
             <img alt="ikona głowy" src="img/uslugi/wektory_8.png" />
           </picture>
-          <span>Obsługa klienta<br />indywidualnego</span>
+          <span>Obsługa klienta<br />indywidualnego<br /></span>
         </a>
         <div style="clear: both; height: 0"></div>
       </div>
@@ -420,16 +436,21 @@
         <a href="https://itsmsoftware.pl"><img alt="logo firmy ITSM Software" src="img/klienci/itsm.png" /></a>
         <a href="https://www.astra.com.pl"><img alt="logo firmy Astra" src="img/klienci/astra.png" /></a>
         <a href="https://opgk.rzeszow.pl"><img alt="logo firmy OPGK Rzeszów" src="img/klienci/opgk_2.png" /></a>
-        <a href="https://inspektorat_weterynarii.pl"><img alt="logo firmy GIW" src="img/klienci/giw.png" /></a><!--  todo -->
-        <a href="https://salesbook.com/pl"><img src="img/klienci/salesbook_small.png" /></a>
+        <a href="https://inspektorat_weterynarii.pl"><img alt="logo firmy GIW"
+            src="img/klienci/giw.png" /></a><!--  todo -->
+        <a href="https://salesbook.com/pl"><img alt="logo firmy salesbook" src="img/klienci/salesbook_small.png" /></a>
         <a href="https://www.dare.pl"><img alt="logo firmy Dare" src="img/klienci/dare.png" /></a><!--  todo -->
       </div>
       <div style="clear: both; height: 0"></div>
       <div class="triangle"></div>
     </section>
     <section id="o_mnie">
-      <img alt="portret właściciela kancelarii NewLegal" class="portrait" src="img/portret.png"
-        style="transition: 1s opacity; opacity: 0;" />
+      <picture>
+        <source media="(min-width:950px)" srcset="img/portret_desktop.webp" />
+        <source media="(max-width:949px)" srcset="img/portret_mobile.webp" />
+        <img alt="portret właściciela kancelarii NewLegal" class="portrait" src="img/portret_desktop.png"
+          style="transition: 1s opacity; opacity: 0;" />
+      </picture>
       <img alt="ozdoba" class="cosmic_img" src="img/cosmic_lines_1.png" />
       <div class="text" style="transition: 1s opacity; opacity: 0;">
         <div class="title">O mnie</div>
@@ -495,10 +516,16 @@
           <textarea id="content_ci"></textarea>
           <label for="content_ci" class="bottom">Treść wiadomości</label>
 
-          <button>Wyślij wiadomość</button>
+          <button onclick="contact.send_mail(event)">Wyślij wiadomość</button>
           <div style="clear: both; height: 0"></div>
         </form>
       </div>
+
+      <div class="acknowledgment">
+        <div class="title">Dziękujemy za kontakt!</div>
+        <div class="text">Twoja wiadomość została wysłana.</div>
+      </div>
+      
       <div class="asap" style="transition: 1s transform; transform: translateX(-100vw);">
         <picture>
           <source media="(min-width:950px)" srcset="img/contact_large.webp" />
@@ -506,7 +533,7 @@
           <img alt="ikona smartfonów" src="img/contact.png" />
         </picture>
         <div class="content">
-          <div class="title">Szybki kontakt</div>
+          <div class="title">Dane kontaktowe</div>
           <a href="tel:+48 726 103 160">+48 726 103 160</a>
           <a href="mailto:kontakt@newlegal.pl">kontakt@newlegal.pl</a>
         </div>

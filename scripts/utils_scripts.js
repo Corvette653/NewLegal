@@ -73,6 +73,20 @@ var appear = {
     kontakt: async function () { appear.emerge("#kontakt", appear.kontakt, [document.querySelector("#kontakt .form"), document.querySelector("#kontakt .asap")], "transform"); },
 }
 
+contact = {
+    send_mail: async function (evt) {
+        evt.preventDefault();
+        var form = document.querySelector("#kontakt .form");
+        var ack = document.querySelector("#kontakt .acknowledgment");
+        form.setAttribute("style", "opacity: 0;");
+        await utils.sleep(500);
+        form.setAttribute("style", "display: none;");
+        ack.setAttribute("style", "display: flex;");
+        await utils.sleep(100);
+        ack.setAttribute("style", "display: flex; opacity: 1");
+    },
+}
+
 window.onload = function () {
     utils.check_device();
     window.addEventListener("resize", utils.check_device, false);
@@ -93,10 +107,11 @@ window.onload = function () {
 
     cookies.check();
 
-    document.querySelector("#blog").addEventListener("touchstart", blog_carousel.handleTouchStart, false);
+    document.querySelector("#blog").addEventListener("touchstart", blog_carousel.handleTouchStart, {passive: true});
     document.addEventListener("touchend", blog_carousel.handleTouchEnd, false);
+    document.querySelector("#blog").addEventListener("mousedown", blog_carousel.handleTouchStart, {passive: true});
+    document.addEventListener("mouseup", blog_carousel.handleTouchEnd, false);
 }
-
 // var bookmarks = document.querySelectorAll("#main-content .bookmarks .bookmark");
 
 // otwieranie i zamykanie zakładek #uslugi
